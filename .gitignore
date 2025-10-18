@@ -1,7 +1,6 @@
 # Rust build artifacts
 target/
 **/*.rs.bk
-Cargo.lock
 *.pdb
 
 # Node dependencies
@@ -11,12 +10,13 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
-# Build outputs
-dist/
+# Build outputs (keep final .exe)
+dist/*
+!dist/nexus-ide.exe
+!dist/config/
 ui/dist/
 src-tauri/target/
 build/
-*.exe
 *.dll
 *.so
 *.dylib
@@ -29,7 +29,12 @@ src-tauri/bundle/
 
 # IDE files
 .vscode/
+.vscode-insiders/
+.vs/
 .idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/*.ipr
 *.swp
 *.swo
 *~
