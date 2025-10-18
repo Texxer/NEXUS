@@ -71,19 +71,23 @@
       <div class="file-explorer" style="width: {explorerWidth}px;">
         <FileExplorer />
       </div>
-      <div class="resizer" />
+      <div class="resizer"></div>
     {/if}
 
     <div class="editor-container">
       <div class="tabs">
         {#each $openFiles as file}
-          <button
+          <div
             class="tab"
             class:active={$currentFile === file}
+            role="tab"
+            tabindex="0"
             on:click={() => currentFile.set(file)}
+            on:keydown={(e) => e.key === 'Enter' && currentFile.set(file)}
           >
             <span class="tab-name">{file.split('/').pop()}</span>
-            <span 
+            <button
+              type="button"
               class="tab-close"
               on:click|stopPropagation={() => {
                 openFiles.update(files => files.filter(f => f !== file));
@@ -93,8 +97,9 @@
                   currentFile.set(null);
                 }
               }}
-            >×</span>
-          </button>
+              aria-label="Close tab"
+            >×</button>
+          </div>
         {/each}
       </div>
 
@@ -252,16 +257,21 @@
     gap: 8px;
     padding: 8px 16px;
     background: transparent;
-    border: none;
     color: #969696;
     cursor: pointer;
     border-right: 1px solid #3e3e42;
     font-size: 13px;
     white-space: nowrap;
+    outline: none;
   }
 
   .tab:hover {
     background: #37373d;
+  }
+
+  .tab:focus {
+    outline: 1px solid #007acc;
+    outline-offset: -1px;
   }
 
   .tab.active {
@@ -283,6 +293,11 @@
     font-size: 16px;
     line-height: 1;
     opacity: 0.7;
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
   }
 
   .tab-close:hover {
