@@ -267,9 +267,9 @@ Startup Time        50ms ✅       500ms        50ms         8-10s
 Download Size       10MB ✅       150MB        20MB         500MB
 Memory (Idle)       50MB ✅       200MB        40MB         2GB
 Cost                Free ✅       Free         Free         $199/yr
-AI Native          ✅✅✅ ✅      ⭐⭐        ❌           ⭐⭐
-GUI + Vim          ✅✅✅        ⭐           ✅✅✅       ❌
-Multi-Language     ✅✅          ✅✅✅       ✅           ✅✅✅
+AI Native          ✅✅✅✅      ⭐⭐        ❌           ⭐⭐
+GUI + Vim          ✅✅✅        ⭐          ✅✅✅       ❌
+Multi-Language     ✅✅          ✅✅✅      ✅           ✅✅✅
 Semantic Analysis  ✅✅          ✅✅        ❌           ✅✅✅
 ```
 
