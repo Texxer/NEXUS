@@ -13,23 +13,27 @@ After comprehensive analysis of all major IDEs across the market, we've identifi
 ### Key Insights from Framework Analysis
 
 **Pattern 1: The Speed vs Features Tradeoff**
+
 - ✅ Vim/Neovim: 10-150ms startup, 40MB RAM, ZERO features without plugins
 - ✅ VS Code: 500ms startup, 200MB RAM, 5000+ extensions, no AI
 - ✅ IntelliJ Ultimate: 10s+ startup, 2GB+ RAM, *every feature*, no built-in AI
 - 🚀 **NEXUS PRO**: <100ms startup, 50MB RAM, core IDE + AI built-in
 
 **Pattern 2: The AI Gap**
+
 - Every major IDE (VS Code, IntelliJ, WebStorm, etc.) treats AI as a *plugin/addon*
 - Ollama cloud enables local LLMs, but no IDE has native integration
 - **Opportunity**: Make AI a *core feature*, not a bolt-on
 
 **Pattern 3: Language-Specific Fragmentation**
+
 - WebStorm for JS, PyCharm for Python, CLion for C++, PhpStorm for PHP, etc.
 - Each requires separate licensing ($99-119/year per IDE)
 - Users need 3-5 different IDEs for full-stack development
 - **Opportunity**: "One IDE for all languages" with Ollama assistance
 
 **Pattern 4: Enterprise Bloat**
+
 - IntelliJ Ultimate, JetBrains Suite: Hundreds of features 90% of users never use
 - DataGrip, DataSpell: Specialized single-purpose tools
 - **Opportunity**: Focused, modal editing for 80% of use cases
@@ -64,6 +68,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 ```
 
 **NEXUS PRO's Unique Wins:**
+
 1. **AI Native** (3x better than competitors)
 2. **Startup Speed** (50ms, only Vim matches at CLI)
 3. **Modal + GUI** (unique combination)
@@ -77,6 +82,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 ### What Works (Steal These)
 
 #### From **IntelliJ Ultimate** (Best IDE)
+
 - ✅ **Semantic Analysis**: PSI trees for deep code understanding
 - ✅ **Refactoring Engine**: Rename, extract, inline - all with AST-aware precision
 - ✅ **Inspection System**: Real-time code analysis with quick fixes
@@ -86,6 +92,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 **NEXUS Implementation**: Core semantic engine with Tree-sitter, integrate with LSP servers, implement gradual code analysis
 
 #### From **VS Code** (Most Popular)
+
 - ✅ **Command Palette** (Ctrl+Shift+P): Discoverable feature access
 - ✅ **Multi-cursor Editing**: Simultaneous edits
 - ✅ **Split Editors**: Vertical/horizontal split for comparison
@@ -95,6 +102,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 **NEXUS Implementation**: All of these built-in, skip marketplace initially (core features only)
 
 #### From **Vim/Neovim** (Most Efficient)
+
 - ✅ **Modal Editing**: Normal/Insert/Visual modes - *10x faster* for power users
 - ✅ **Keybinding Philosophy**: Every operation via keyboard, no mouse needed
 - ✅ **Minimal Startup**: 50ms cold start
@@ -104,6 +112,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 **NEXUS Implementation**: Optional Vim mode, keep shortcuts discoverable for non-Vim users, make all actions keyboard-accessible
 
 #### From **Fleet** (Most Innovative)
+
 - ✅ **Light Mode**: Simple text editor when you need speed
 - ✅ **Smart Mode**: Full IDE when needed (lazy-load features)
 - ✅ **Minimal UI**: Focus on editor, hide panels until needed
@@ -113,6 +122,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 **NEXUS Implementation**: Progressive enhancement - start minimal, add features on-demand
 
 #### From **Zed** (Most Modern)
+
 - ✅ **Rust Backend**: Performance + type safety
 - ✅ **Collaborative Editing**: Real-time co-editing
 - ✅ **GPU-Accelerated UI**: Smooth rendering
@@ -122,6 +132,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 **NEXUS Implementation**: All these already planned - align with Zed's architecture
 
 #### From **Ollama** (AI Model Server)
+
 - ✅ **Local LLMs**: No cloud, no data transmission
 - ✅ **REST API**: Simple HTTP interface
 - ✅ **Model Switching**: Easy swap between models (7B, 13B, 70B)
@@ -159,6 +170,7 @@ Legend: ✅=Perfect  ✅⭐=Excellent  ✅=Good  ⭐⭐⭐=Excellent  ⭐⭐=Goo
 Based on analyzing features across all 32 IDEs, here's the priority:
 
 ### Tier 1: Core (MVP - Week 1-2)
+
 ```
 Must have for any viable code editor
 
@@ -175,6 +187,7 @@ Must have for any viable code editor
 **Justification**: Even Vim has all these. Non-negotiable.
 
 ### Tier 2: Essential (Weeks 2-3)
+
 ```
 Features that 80% of professional developers use daily
 
@@ -192,6 +205,7 @@ Features that 80% of professional developers use daily
 **Justification**: WebStorm, PyCharm, CLion all have these. Professional requirement.
 
 ### Tier 3: Differentiation (Weeks 3-4)
+
 ```
 Features that make NEXUS PRO different from competitors
 
@@ -207,6 +221,7 @@ Features that make NEXUS PRO different from competitors
 **Justification**: These features justify the existence of NEXUS PRO.
 
 ### Tier 4: Nice-to-Have (v1.1+)
+
 ```
 Features that can wait for version 1.1 or beyond
 
@@ -235,6 +250,7 @@ Features that can wait for version 1.1 or beyond
 | Search 10K files | 500ms | 1s | 1.5s | 2s | **<1s** ✅ |
 
 **How We Achieve This:**
+
 1. Rust backend (no GC pauses)
 2. Tauri UI (native rendering, not Electron)
 3. Async Tokio runtime (non-blocking I/O)
@@ -250,6 +266,7 @@ Features that can wait for version 1.1 or beyond
 Unlike every competitor, we make AI *core*, not bolt-on:
 
 ### Level 1: Completions
+
 ```
 User types: function add(a, b) { return 
 NEXUS shows: a + b
@@ -259,6 +276,7 @@ NEXUS shows: a + b
 ```
 
 ### Level 2: Context-Aware Suggestions
+
 ```
 User types: def process_user_data(user):
 NEXUS suggests: 
@@ -269,6 +287,7 @@ NEXUS suggests:
 ```
 
 ### Level 3: Refactoring Suggestions
+
 ```
 User selects: 
   if user.age > 18:
@@ -282,6 +301,7 @@ NEXUS suggests:
 ```
 
 ### Level 4: Error Fixing
+
 ```
 Runtime error: TypeError: unsupported operand type(s) for +: 'int' and 'str'
 Line 42: result = data + 10
@@ -293,6 +313,7 @@ NEXUS suggests:
 ```
 
 ### Implementation
+
 - **Model**: Ollama local (no vendor lock-in)
 - **Caching**: 5-min TTL per completion context
 - **Async**: Non-blocking, shows spinner
@@ -304,6 +325,7 @@ NEXUS suggests:
 ## 🎯 Go-To-Market Strategy
 
 ### Positioning Statement
+
 ```
 "NEXUS PRO is the only IDE that combines 
 Vim's speed, VS Code's beauty, and Ollama's intelligence."
@@ -323,26 +345,31 @@ Vim's speed, VS Code's beauty, and Ollama's intelligence."
 ### Marketing Angles
 
 **Angle 1: "Speed"**
+
 - Fastest GUI editor (except Vim CLI)
 - Launches while VS Code is still loading
 - <100ms startup promise
 
 **Angle 2: "Simplicity"**
+
 - No plugin marketplace chaos
 - Focused feature set
 - Learn in 1 hour, master in 1 week
 
 **Angle 3: "AI"**
+
 - Only IDE with Ollama native
 - Local LLMs (no cloud, no vendor)
 - Completions that understand context
 
 **Angle 4: "Open Source"**
+
 - Free forever (unlike JetBrains $99-199/year)
 - Community-driven
 - Transparent roadmap
 
 **Angle 5: "Full-Stack"**
+
 - One IDE for JavaScript, Python, Go, Rust, C++, etc.
 - No vendor lock-in to "PyCharm for Python"
 - Unified experience across languages

@@ -16,28 +16,18 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "lucide-react": "^0.294.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "zustand": "^4.4.0"
+    "@tauri-apps/api": "^2.8.0",
+    "lucide-svelte": "^0.292.0",
+    "svelte": "^4.2.8"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^7.10.2",
-    "@tauri-apps/api": "^2.8.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.5",
     "@tauri-apps/cli": "^2.8.4",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
-    "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
-    "electron": "^38.3.0",
-    "electron-builder": "^26.0.12",
-    "electron-is-dev": "^3.0.1",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^3.4.18",
     "terser": "^5.44.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
