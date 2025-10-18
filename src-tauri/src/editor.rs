@@ -36,15 +36,14 @@ impl EditorBuffer {
     pub fn get_line(&self, line_num: usize) -> String {
         self.content
             .line(line_num)
-            .map(|l| l.to_string())
-            .unwrap_or_default()
+            .to_string()
     }
 
     pub fn line_count(&self) -> usize {
         self.content.len_lines()
     }
 
-    pub fn char_at(&self, position: usize) -> Option<char> {
+    pub fn char_at(&self, position: usize) -> char {
         self.content.char(position)
     }
 

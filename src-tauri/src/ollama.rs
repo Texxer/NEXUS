@@ -49,7 +49,7 @@ impl OllamaClient {
     }
 
     pub async fn get_completion(&self, request: CompletionRequest) -> Result<CompletionResponse, String> {
-        let prompt = format!(
+        let _prompt = format!(
             "Complete this {} code:\n```{}\n{}\n```\nCompletion:",
             request.language, request.language, request.code_context
         );

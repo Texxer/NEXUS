@@ -1,0 +1,15 @@
+
+# Apache License 2.0 and GPLv3 Compatibility Notice
+
+This project includes code under both the Apache License 2.0 and the GNU General Public License v3.0 (GPLv3).
+
+- All original code in this repository is licensed under the GNU General Public License v3.0 (GPLv3).
+- Some components may be licensed under the Apache License 2.0. These components retain their original license and copyright notices.
+- When distributing this project, the terms of the GPLv3 apply to the entire combined work. The Apache 2.0 license terms (including attribution and patent clauses) are preserved for relevant components.
+
+See:
+
+- LICENSE-GPLv3.txt (full GPLv3 text)
+- LICENSE-APACHE-2.0.txt (full Apache 2.0 text)
+
+SPDX-License-Identifier: GPL-3.0-or-later AND Apache-2.0

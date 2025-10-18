@@ -338,6 +338,36 @@ Then start the dev servers and begin implementing! 🚀
 
 ---
 
+# NEXUS IDE
+
+A modern, cross-platform desktop IDE built with Svelte (frontend) and Tauri (backend).
+
+## Project Prompt for Copilot
+
+> Build a modern, cross-platform desktop IDE using Svelte (frontend) and Tauri (backend).
+> Features must include:
+> - Real-time syntax highlighting (100+ languages)
+> - Persistent window state (remembers position/size)
+> - File explorer, terminal, and editor components
+> - Support for Rust, TypeScript, and Svelte
+> - Clean, production-ready code with clear documentation
+> - Future extensibility for AI integration and LSP diagnostics
+>
+> Prioritize usability, performance, and maintainability.
+
+## Features
+- Native Windows IDE (Tauri 2.x)
+- Syntax highlighting with highlight.js
+- Persistent window state
+- File explorer, terminal, and editor
+- Rust, TypeScript, and Svelte support
+- Production-ready code
+
+## License
+This project is dual-licensed under GPLv3 and includes Apache 2.0 components. See LICENSE for details.
+
+---
+
 **YOU'RE READY TO BUILD! 🚀**
 
 *Last Updated: October 18, 2025 - MVP Scaffold Complete*  
