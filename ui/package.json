@@ -16,13 +16,14 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/api": "^2.4.0",
+    "highlight.js": "^11.11.1",
     "lucide-svelte": "^0.292.0",
     "svelte": "^4.2.8"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.5",
-    "@tauri-apps/cli": "^2.8.4",
+    "@tauri-apps/cli": "^2.4.0",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "autoprefixer": "^10.4.16",

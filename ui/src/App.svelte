@@ -1,4 +1,5 @@
 <script>
+  import './app.css'
   import Editor from './components/Editor.svelte'
   import Sidebar from './components/Sidebar.svelte'
   import Terminal from './components/Terminal.svelte'
@@ -17,7 +18,3 @@
     <Terminal />
   </div>
 </div>
-
-<style global>
-  import './app.css'
-</style>

@@ -7,29 +7,20 @@ edition = "2021"
 rust-version = "1.70"
 
 [build-dependencies]
-tauri-build = { version = "1.5", features = [] }
+tauri-build = { version = "2.0", features = [] }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.5", features = ["shell-open", "window-all"] }
-tokio = { version = "1.35", features = ["full"] }
+tauri = { version = "2", features = [] }
+tokio = { version = "1", features = ["full"] }
 ropey = "1.6"
-tree-sitter = "0.20"
-tree-sitter-rust = "0.21"
-tree-sitter-python = "0.20"
-tree-sitter-javascript = "0.20"
-tree-sitter-json = "0.20"
-tower-lsp = "0.20"
-crossbeam = "0.8"
 tracing = "0.1"
 tracing-subscriber = "0.3"
 anyhow = "1.0"
 thiserror = "1.0"
 futures = "0.3"
-
-[dev-dependencies]
-tauri-build = { version = "1.5", features = [] }
+reqwest = { version = "0.11", features = ["json"] }
 
 [features]
 default = ["custom-protocol"]

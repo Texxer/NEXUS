@@ -1,22 +1,20 @@
 {
-  "package": {
-    "productName": "NEXUS IDE",
-    "version": "0.1.0"
-  },
+  "productName": "NEXUS IDE",
+  "version": "0.1.0",
+  "identifier": "com.nexus-ide.app",
   "build": {
     "beforeBuildCommand": "npm run build",
-    "devUrl": "http://localhost:5173",
+    "devUrl": "http://localhost:5175",
     "frontendDist": "../ui/dist"
   },
-  "tauri": {
+  "app": {
     "windows": [
       {
         "title": "NEXUS IDE",
         "width": 1400,
         "height": 900,
         "resizable": true,
-        "fullscreen": false,
-        "decorations": true
+        "fullscreen": false
       }
     ],
     "security": {
