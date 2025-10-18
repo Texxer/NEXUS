@@ -70,11 +70,20 @@ __pycache__/
 venv/
 env/
 
-# Misc
-.vscode-insiders/
-.vs/
-.cargo/
+# Submodules & Large Directories
+frameworks/
 backup/
 models/
 ollama/
+
+# IDE/Editor caches
+.vscode-insiders/
+.vs/
+.cargo/
+
+# Misc
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
 
