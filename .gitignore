@@ -80,6 +80,7 @@ frameworks/
 backup/
 models/
 ollama/
+NEXUS/
 
 # IDE/Editor caches
 .vscode-insiders/
