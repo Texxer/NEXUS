@@ -1,0 +1,15 @@
+target/
+.DS_Store
+dist/
+src-tauri/target/
+ui/dist/
+ui/node_modules/
+.env
+.env.local
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cargo/
