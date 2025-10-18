@@ -13,6 +13,7 @@ GoLand is a full-featured IDE for Go (Golang) development by JetBrains. It provi
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/go](https://www.jetbrains.com/go/)
 2. Install via Toolbox App
 3. On launch, install Go SDK (or configure path)
@@ -49,30 +50,35 @@ func main() {
 ## Key Features
 
 ### Code Intelligence
+
 - Code completion with Go modules
 - Go-to definition and find usages
 - Refactoring (rename, extract method)
 - Smart documentation
 
 ### Debugging
+
 - Breakpoints with conditions
 - Step through execution
 - Variable inspection
 - Goroutine debugging
 
 ### Testing
+
 - Run/Debug tests from gutter
 - Test coverage analysis
 - Benchmark support
 - Testify framework integration
 
 ### Built-in Tools
+
 - Terminal for go commands
 - Go Modules support
 - Build configurations
 - Docker integration
 
 ### Code Quality
+
 - Linters: golangci-lint, gofmt
 - Code formatting: Ctrl+Alt+L
 - Go Vet integration
@@ -97,12 +103,14 @@ func main() {
 ## Common Tasks
 
 ### Managing Dependencies
+
 - View go.mod in editor
 - Auto-import missing packages
 - Ctrl+Alt+O to optimize imports
 - Tools > Go Modules > Tidy
 
 ### Running Tests
+
 ```
 Right-click test file > Run Tests
 Or: Run > Run...
@@ -110,6 +118,7 @@ Select test configuration
 ```
 
 ### Building & Deployment
+
 ```
 Run > Edit Configurations
 Create custom build configuration
@@ -119,6 +128,7 @@ Execute via Run menu
 ---
 
 ## Resources
+
 - Official Docs: [jetbrains.com/help/go](https://www.jetbrains.com/help/go/)
 - Go Lang: [golang.org](https://golang.org/)
 - Go Modules: [golang.org/ref/mod](https://golang.org/ref/mod)

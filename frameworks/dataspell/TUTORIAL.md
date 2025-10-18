@@ -13,6 +13,7 @@ DataSpell is a JetBrains IDE dedicated to exploratory data analysis and machine 
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/dataspell](https://www.jetbrains.com/dataspell/)
 2. Install Anaconda or Miniconda (recommended)
 3. Install DataSpell via Toolbox
@@ -39,29 +40,34 @@ DataSpell is a JetBrains IDE dedicated to exploratory data analysis and machine 
 ## Key Features
 
 ### Notebook Support
+
 - Full Jupyter notebook editing
 - Cell execution and output display
 - Rich output (plots, tables, HTML)
 - Code cells with full IDE features
 
 ### Code Assistance
+
 - Code completion in cells
 - Variable hints
 - Library documentation
 - Debugging with breakpoints
 
 ### Data Tools
+
 - Data Explorer: Browse DataFrames visually
 - SQL Console: Query databases
 - Visualization: Matplotlib, Plotly, Seaborn
 - Code profiler: Optimize slow code
 
 ### Environment Management
+
 - Conda/Venv switching
 - Package installation
 - Environment recreation
 
 ### Deployment
+
 - Export notebooks to scripts
 - Convert to HTML reports
 - Share analysis results
@@ -94,6 +100,7 @@ DataSpell is a JetBrains IDE dedicated to exploratory data analysis and machine 
 ---
 
 ## Resources
+
 - Docs: [jetbrains.com/help/dataspell](https://www.jetbrains.com/help/dataspell/)
 - Jupyter: [jupyter.org](https://jupyter.org/)
 - Pandas: [pandas.pydata.org](https://pandas.pydata.org/)

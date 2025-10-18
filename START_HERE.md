@@ -40,15 +40,19 @@
 ## 📖 Start Here
 
 ### First (5 minutes)
+
 → **QUICKSTART.md** - How to start dev servers
 
 ### Second (10 minutes)
+
 → **WEEK1_STATUS.md** - Current status & progress
 
 ### Third (30 minutes)
+
 → **MVP_WEEK1_PLAN.md** - Detailed week 1 breakdown
 
 ### Fourth (1-2 hours)
+
 → **docs/012_IDE_IMPLEMENTATION_PLAN_V2.md** - Technical roadmap
 
 ---
@@ -70,6 +74,7 @@
 ## 💡 Three Strategic Documents Drive Everything
 
 ### Document 1: Technical Roadmap (012)
+
 - What to build
 - How to build it
 - Performance targets
@@ -78,6 +83,7 @@
 → **Hand this to engineers**
 
 ### Document 2: Business Strategy (013)
+
 - Who to sell to
 - How to position it
 - Market opportunity ($500M-$700M SAM)
@@ -86,6 +92,7 @@
 → **Hand this to marketing**
 
 ### Document 3: Integration Framework (014)
+
 - How development and marketing coordinate
 - Weekly sync structure
 - 30-day roadmap
@@ -98,6 +105,7 @@
 ## ⚡ Performance Targets
 
 **Why These Matter:**
+
 - Every IDE competitor is slow or bloated
 - We win by being FAST + BEAUTIFUL + FREE + AI-NATIVE
 
@@ -112,11 +120,13 @@
 ## 🎓 The Competitive Advantage
 
 ### What Competitors Do
+
 - VS Code: 500ms startup, 200MB RAM, 150MB download
 - IntelliJ: 8-10s startup, 2GB RAM, 500MB download
 - Vim: 50ms startup, but CLI only (no GUI)
 
 ### What NEXUS Does
+
 - **50ms startup** like Vim but with beautiful GUI
 - **<50MB RAM** lightweight like cloud editors
 - **<10MB download** smallest IDE ever
@@ -186,6 +196,7 @@ Desktop: Tauri 1.5 (not Electron!)
 ## 🎯 Market Opportunity
 
 **Problem**: Developers pay $594/year for IDE fragmentation
+
 - WebStorm $99 (JavaScript)
 - PyCharm $99 (Python)  
 - PhpStorm $99 (PHP)
@@ -194,6 +205,7 @@ Desktop: Tauri 1.5 (not Electron!)
 - CLion $99 (C++)
 
 **Solution**: NEXUS Pro
+
 - One IDE for all languages
 - Free & open source
 - Fast as Vim, beautiful as VS Code
@@ -207,18 +219,21 @@ Desktop: Tauri 1.5 (not Electron!)
 ## ✅ Launch Success Criteria
 
 ### Week 1 (Technical)
+
 - ✅ Startup <100ms
 - ✅ Memory <50MB
 - ✅ File operations working
 - ✅ No crashes
 
 ### Week 2 (Community)
+
 - ✅ ProductHunt top 10
 - ✅ GitHub 500+ stars
 - ✅ 1,000+ active users
 - ✅ 3+ media articles
 
 ### Month 1 (Growth)
+
 - ✅ 10,000+ users
 - ✅ 2,000+ stars
 - ✅ Community momentum
@@ -253,22 +268,26 @@ Desktop: Tauri 1.5 (not Electron!)
 ## 💫 The Dream
 
 In 5 days:
+
 - ✅ Fastest IDE ever built (50ms startup)
 - ✅ AI running locally (Ollama native)
 - ✅ Free & open source (no vendor lock-in)
 - ✅ Focused & beautiful (no bloat)
 
 In 2 weeks:
+
 - 🚀 Launch on ProductHunt
 - 🚀 Top 10 first day
 - 🚀 1,000+ users by week 2
 
 In 3 months:
+
 - 📈 10,000+ community members
 - 📈 Plugin ecosystem starting
 - 📈 Enterprise interest emerging
 
 In 1 year:
+
 - 🌟 One million developers using NEXUS
 - 🌟 Saved $594 per developer = $594M community value
 - 🌟 Fundamentally changed IDE market
@@ -278,6 +297,7 @@ In 1 year:
 ## 🎉 You Built The Foundation
 
 From "neat idea" to "market-ready product":
+
 - 32-IDE framework analysis → insights
 - Strategic documents → planning
 - MVP scaffold → execution-ready

@@ -13,26 +13,32 @@
 ## 🚀 To Start Development
 
 ### Step 1: Install Frontend Dependencies (First Time Only)
+
 ```powershell
 cd C:\Users\Michael\OneDrive\generalAI\IDE\ui
 npm install
 ```
 
 ### Step 2: Terminal 1 - Start Frontend Dev Server
+
 ```powershell
 cd C:\Users\Michael\OneDrive\generalAI\IDE\ui
 npm run dev
 ```
+
 ✅ Watch for: `Local: http://localhost:5173`
 
 ### Step 3: Terminal 2 - Start Backend Dev App
+
 ```powershell
 cd C:\Users\Michael\OneDrive\generalAI\IDE
 cargo tauri dev
 ```
+
 ✅ Watch for: Desktop window opens with dark UI
 
 ### Terminal 3: Make Changes
+
 Edit files in `src-tauri/src/` or `ui/src/` - both auto-reload!
 
 ---

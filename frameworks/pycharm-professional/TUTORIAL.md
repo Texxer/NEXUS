@@ -13,6 +13,7 @@ PyCharm Professional is a powerful IDE for Python development by JetBrains. It e
 ## What's New in Professional vs Community
 
 ### 1. **Web Framework Support**
+
 - Django framework integration
 - Flask support
 - Pyramid, Tornado, etc.
@@ -20,12 +21,14 @@ PyCharm Professional is a powerful IDE for Python development by JetBrains. It e
 - ORM support
 
 ### 2. **Jupyter Notebooks**
+
 - Full notebook editing in IDE
 - Cell execution
 - Variable explorer
 - Rich output rendering
 
 ### 3. **Database Tools**
+
 - Connect to databases directly
 - SQL console
 - Entity Diagram
@@ -33,6 +36,7 @@ PyCharm Professional is a powerful IDE for Python development by JetBrains. It e
 - Database browser
 
 ### 4. **Remote Development**
+
 - SSH development
 - Docker containers
 - Vagrant machines
@@ -40,6 +44,7 @@ PyCharm Professional is a powerful IDE for Python development by JetBrains. It e
 - Kubernetes
 
 ### 5. **Advanced Features**
+
 - Profiler for performance analysis
 - Visual Debugger
 - Coverage analysis
@@ -50,11 +55,13 @@ PyCharm Professional is a powerful IDE for Python development by JetBrains. It e
 ## Installation & Setup
 
 ### System Requirements
+
 - **RAM**: 8 GB minimum (16 GB recommended)
 - **Disk Space**: 3.5 GB
 - **Python**: Any version with pip/virtual environments
 
 ### Installation
+
 1. Download from [jetbrains.com/pycharm](https://www.jetbrains.com/pycharm/)
 2. Install via Toolbox App (recommended)
 3. Select Professional Edition

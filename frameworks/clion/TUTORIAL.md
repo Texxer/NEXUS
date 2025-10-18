@@ -22,16 +22,19 @@ CLion is a cross-platform IDE for C and C++ development. It provides intelligent
 ### Toolchain Requirements
 
 **Windows Options:**
+
 - Bundled MinGW (easiest)
 - Cygwin 2.8+ with gcc-g++ and gdb
 - MSVC (Visual Studio 2013-2022)
 - WSL (Windows Subsystem for Linux)
 
 **macOS:**
+
 - Xcode Command Line Tools: `xcode-select --install`
 - Homebrew for package management
 
 **Linux:**
+
 - GCC/G++ and GDB (Ubuntu: `sudo apt install build-essential gdb`)
 - CMake 3.15+
 
@@ -178,10 +181,12 @@ int main(int argc, char **argv) {
 ### Profiling and Optimization
 
 **CPU Profiler:**
+
 - Tools > Analyze Running Process
 - Identifies hot spots and optimization opportunities
 
 **Memory Profiler:**
+
 - Track memory allocation
 - Detect memory leaks
 - Analyze heap usage
@@ -236,17 +241,20 @@ int main(int argc, char **argv) {
 ## Common Issues
 
 ### CMake Not Found
+
 - Install CMake: `sudo apt install cmake` (Linux)
 - Add to PATH if installed manually
 - Configure path in Settings > Build, Execution, Deployment > CMake
 
 ### Compilation Errors
+
 - Check CMakeLists.txt syntax
 - Verify toolchain is configured correctly
 - Clean build: Build > Clean Project
 - Rebuild: Build > Rebuild Project
 
 ### Debugging Doesn't Work
+
 - Ensure `Debug` configuration is selected
 - Verify compiler supports debugging (`-g` flag)
 - Check firewall for remote debugging
@@ -289,4 +297,3 @@ Settings > Code Style > C/C++:
 - **CMake Documentation**: [cmake.org](https://cmake.org/)
 - **C++ Reference**: [cppreference.com](https://cppreference.com/)
 - **GCC/GDB Docs**: [gnu.org](https://www.gnu.org/)
-

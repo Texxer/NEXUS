@@ -14,6 +14,7 @@ WebStorm is a full-featured IDE for JavaScript and TypeScript development by Jet
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/webstorm](https://www.jetbrains.com/webstorm/)
 2. Install Node.js from [nodejs.org](https://nodejs.org/)
 3. Install WebStorm via Toolbox
@@ -22,6 +23,7 @@ WebStorm is a full-featured IDE for JavaScript and TypeScript development by Jet
 ### Create Web Project
 
 **React Project:**
+
 ```
 1. File > New Project > React
 2. Configure with TypeScript (recommended)
@@ -30,6 +32,7 @@ WebStorm runs: npx create-react-app
 ```
 
 **Vue Project:**
+
 ```
 1. File > New Project > Vue
 2. Select Vue version (3 recommended)
@@ -51,6 +54,7 @@ WebStorm runs: npm create vue@latest
 ## Key Features
 
 ### Code Intelligence
+
 - Code completion for JavaScript/TypeScript
 - Component prop suggestions
 - CSS class/ID completion
@@ -58,6 +62,7 @@ WebStorm runs: npm create vue@latest
 - Library documentation
 
 ### Debugging
+
 - Breakpoints in code
 - Step debugging
 - Watch expressions
@@ -65,6 +70,7 @@ WebStorm runs: npm create vue@latest
 - Browser DevTools integration
 
 ### Testing
+
 - Jest integration
 - Vitest support
 - Test runner in gutter
@@ -72,12 +78,14 @@ WebStorm runs: npm create vue@latest
 - Debug tests
 
 ### Frameworks
+
 - **React**: JSX, hooks, component navigation
 - **Vue**: Template syntax, v-directives
 - **Angular**: Decorators, dependency injection
 - **TypeScript**: Type checking, type definitions
 
 ### Package Management
+
 - npm, yarn, pnpm support
 - Dependency visualization
 - Version management
@@ -109,6 +117,7 @@ export const Button: React.FC<ButtonProps> = ({
 ```
 
 **Features while coding:**
+
 - Auto-import component
 - Type hints for props
 - JSX syntax highlighting
@@ -191,6 +200,7 @@ test('renders button', () => {
 ---
 
 ## Resources
+
 - Official Docs: [jetbrains.com/help/webstorm](https://www.jetbrains.com/help/webstorm/)
 - JavaScript: [javascript.info](https://javascript.info/)
 - TypeScript: [typescriptlang.org](https://www.typescriptlang.org/)

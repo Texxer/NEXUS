@@ -14,6 +14,7 @@ RustRover is a full-featured IDE for Rust development by JetBrains. It provides 
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/rustrover](https://www.jetbrains.com/rustrover/)
 2. Install Rust from [rustup.rs](https://rustup.rs/)
 3. Install RustRover via Toolbox
@@ -51,6 +52,7 @@ fn main() {
 ## Key Features
 
 ### Code Intelligence
+
 - Code completion with trait methods
 - Macro expansion support
 - Type hints and inference
@@ -58,6 +60,7 @@ fn main() {
 - Find usages across project
 
 ### Debugging
+
 - GDB/LLDB integration
 - Breakpoints and conditional breaks
 - Step through code
@@ -65,18 +68,21 @@ fn main() {
 - Thread debugging
 
 ### Testing
+
 - Unit test support
 - Integration test runner
 - Benchmark tests
 - Run tests from gutter
 
 ### Cargo Integration
+
 - Project and dependency management
 - Clippy linting (built-in)
 - Formatting with rustfmt
 - Dependency updates
 
 ### Performance
+
 - Profiler support
 - Benchmarking tools
 - Memory analysis
@@ -127,18 +133,21 @@ fn main() {
 ## Common Tasks
 
 ### Creating Binary Project
+
 - New Project > Binary
 - Implement main logic
 - Run with Shift+F10
 - Debug with Shift+F9
 
 ### Unit Testing
+
 - Tests in same file: #[test]
 - Or separate tests/ directory
 - Run: Right-click test > Run
 - Or Run > Test Package
 
 ### Clippy Linting
+
 - Built-in code quality checks
 - View warnings in editor
 - Apply fixes: Alt+Enter
@@ -157,6 +166,7 @@ fn main() {
 ---
 
 ## Resources
+
 - Official Docs: [jetbrains.com/help/rustrover](https://www.jetbrains.com/help/rustrover/)
 - Rust Book: [doc.rust-lang.org/book](https://doc.rust-lang.org/book/)
 - Cargo: [doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/)

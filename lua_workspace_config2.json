@@ -1,0 +1,15 @@
+{
+  "Lua.workspace.library": [
+    // Only include WoW API paths if you have them
+  ],
+  "Lua.workspace.ignoreDir": [
+    "node_modules",
+    "build",
+    "dist",
+    "target",
+    "venv",
+    "ui",
+    "frameworks",
+    ".git"
+  ]
+}

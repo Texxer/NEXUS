@@ -1,4 +1,5 @@
 # 🚀 NEXUS Pro MVP - Status Dashboard
+
 ## Week 1 Build - October 18, 2025
 
 ---
@@ -86,6 +87,7 @@ IDE/
 ## 📝 Code Generated (390 LOC)
 
 ### Backend (Rust)
+
 - ✅ `main.rs` - 80 LOC - App entry, Tauri setup
 - ✅ `editor.rs` - 70 LOC - EditorBuffer with Ropey
 - ✅ `lsp.rs` - 100 LOC - LSP types and server stub
@@ -93,6 +95,7 @@ IDE/
 - ✅ `commands.rs` - 60 LOC - Tauri command handlers
 
 ### Frontend (Svelte)
+
 - ✅ `App.svelte` - Root layout (sidebar + editor + terminal)
 - ✅ `Editor.svelte` - Main editor component (80 LOC)
 - ✅ `Sidebar.svelte` - File browser (50 LOC)
@@ -101,6 +104,7 @@ IDE/
 - ✅ `main.js` - App initialization
 
 ### Configuration Files
+
 - ✅ `Cargo.toml` - Backend dependencies
 - ✅ `package.json` - Frontend dependencies
 - ✅ `vite.config.js` - Vite setup
@@ -113,6 +117,7 @@ IDE/
 ## 🎯 What's Next: Wednesday - Thursday (Core Editor)
 
 ### Wednesday Focus: File Operations
+
 - [ ] Implement `open_file` handler
 - [ ] Implement `save_file` handler
 - [ ] Test file I/O with sample .rs file
@@ -120,6 +125,7 @@ IDE/
 - [ ] Verify editor textarea is responsive
 
 ### Thursday Focus: Integration
+
 - [ ] Wire up LSP for diagnostics
 - [ ] Test LSP connection
 - [ ] Wire up Ollama for completions
@@ -131,6 +137,7 @@ IDE/
 ## 🚀 Development Workflow
 
 ### Terminal 1: Frontend Development Server
+
 ```bash
 cd C:\Users\Michael\OneDrive\generalAI\IDE\ui
 npm install  # First time only
@@ -140,6 +147,7 @@ npm run dev
 **Output**: Vite dev server running on `http://localhost:5173`
 
 ### Terminal 2: Backend Development
+
 ```bash
 cd C:\Users\Michael\OneDrive\generalAI\IDE
 cargo tauri dev
@@ -148,6 +156,7 @@ cargo tauri dev
 **Output**: App runs with live reload, connects to frontend dev server
 
 ### Terminal 3: Git / Commits
+
 ```bash
 cd C:\Users\Michael\OneDrive\generalAI\IDE
 git status
@@ -246,7 +255,9 @@ FRI (Oct 22): POLISH & LAUNCH PREP
 ## 🔗 Dependencies Status
 
 ### Rust Dependencies (src-tauri/Cargo.toml)
+
 ✅ All core dependencies specified:
+
 - tauri (framework)
 - tokio (async runtime)
 - ropey (text buffer)
@@ -256,7 +267,9 @@ FRI (Oct 22): POLISH & LAUNCH PREP
 ⚠️ **Action Needed**: Add `reqwest = "0.11"` for Ollama HTTP calls
 
 ### Node.js Dependencies (ui/package.json)
+
 ✅ All frontend dependencies specified:
+
 - svelte (framework)
 - vite (build tool)
 - tailwindcss (styling)
@@ -289,26 +302,31 @@ Date:   Fri Oct 18 14:32:00 2025
 ## 🎯 Success Criteria Met (So Far)
 
 ✅ **Repository**
+
 - Git initialized
 - First commit made
 - Clean history
 
 ✅ **Backend Structure**
+
 - Rust project scaffold
 - Core modules stubbed
 - Dependencies configured
 
 ✅ **Frontend Structure**
+
 - Svelte app scaffold
 - UI components stubbed
 - Build pipeline ready
 
 ✅ **Development Environment**
+
 - Cargo ready to build
 - npm ready to install
 - Vite ready to dev
 
 ⏳ **Next Phase Blockers**
+
 - Need to run `npm install` before dev
 - Need to add `reqwest` for Ollama
 - Need to implement file operations
@@ -335,7 +353,7 @@ All systems ready for Wednesday's editor implementation.
 
 ---
 
-## 🚀 Ready to Build!
+## 🚀 Ready to Build
 
 **Current Status**: MVP Scaffold Complete ✅  
 **Next Action**: Implement file operations (Wednesday)  

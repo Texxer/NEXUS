@@ -13,6 +13,7 @@ DataGrip is a dedicated IDE for SQL development and database management by JetBr
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/datagrip](https://www.jetbrains.com/datagrip/)
 2. Install via Toolbox App or standalone
 3. Launch and configure database connection
@@ -34,12 +35,14 @@ DataGrip is a dedicated IDE for SQL development and database management by JetBr
 ### Write & Run Queries
 
 **Creating Query File:**
+
 1. Right-click data source > New > Query
 2. Write SQL: `SELECT * FROM users;`
 3. Press Ctrl+Enter or click Run button
 4. View results below
 
 **Features:**
+
 - SQL syntax highlighting and validation
 - Code completion for table names, columns
 - Parameter hints for functions
@@ -50,29 +53,34 @@ DataGrip is a dedicated IDE for SQL development and database management by JetBr
 ## Key Features
 
 ### Database Explorer
+
 - Visual database structure navigation
 - Search across all objects
 - Drag table names into queries
 
 ### Query Console
+
 - Execute multiple statements
 - See results in separate tabs
 - Export results to CSV, JSON, SQL
 - Parameter substitution
 
 ### Data Editor
+
 - Browse table data with sorting/filtering
 - Edit data directly in grid
 - Add/delete rows
 - Commit changes to database
 
 ### Schema Tools
+
 - Create/edit tables visually
 - Manage columns, indexes, constraints
 - View foreign key relationships
 - Schema comparison and migration
 
 ### Version Control Integration
+
 - Commit/push database changes
 - Track DDL changes
 - Git integration for scripts
@@ -104,5 +112,6 @@ DataGrip is a dedicated IDE for SQL development and database management by JetBr
 ---
 
 ## Resources
+
 - Docs: [jetbrains.com/help/datagrip](https://www.jetbrains.com/help/datagrip/)
 - SQL Reference: Each database vendor's docs

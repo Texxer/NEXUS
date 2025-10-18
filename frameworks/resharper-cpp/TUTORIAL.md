@@ -13,10 +13,12 @@ ReSharper C++ is a code analysis and refactoring tool for C++ development in Vis
 ## Installation
 
 ### Prerequisites
+
 - Visual Studio 2015 or later
 - C++ workload installed
 
 ### Installation Steps
+
 1. Download from [jetbrains.com/resharper/cpp](https://www.jetbrains.com/resharper/cpp/)
 2. Run installer
 3. Select Visual Studio version
@@ -30,6 +32,7 @@ ReSharper C++ is a code analysis and refactoring tool for C++ development in Vis
 ### Code Analysis
 
 **Real-time Inspection:**
+
 - Type checking
 - Syntax validation
 - Header file analysis
@@ -38,6 +41,7 @@ ReSharper C++ is a code analysis and refactoring tool for C++ development in Vis
 - CPU-intensive operations warning
 
 **Quick Fixes:**
+
 - Alt+Enter for suggestions
 - Code generation
 - Fix includes
@@ -66,12 +70,14 @@ ReSharper C++ is a code analysis and refactoring tool for C++ development in Vis
 ## Navigation
 
 ### C++ Navigation
+
 - Go to Declaration: Ctrl+B
 - Find Usages: Shift+F12
 - Show Type Hierarchy: Ctrl+Alt+H
 - Include Graph: Navigation > Symbols
 
 ### Header Navigation
+
 - Navigate between .h and .cpp
 - View includes
 - Optimize include paths
@@ -81,12 +87,14 @@ ReSharper C++ is a code analysis and refactoring tool for C++ development in Vis
 ## Build Integration
 
 ### CMake Support
+
 - CMakeLists.txt editing
 - Build configuration
 - Compilation output analysis
 - Error navigation
 
 ### MSBuild Support
+
 - Project file analysis
 - Build target execution
 - Property evaluation
@@ -106,11 +114,13 @@ Tools > Options > ReSharper C++
 ```
 
 ### Clang-Tidy Integration
+
 - Run Clang-Tidy checks
 - Integration with IDE
 - Bulk refactoring
 
 ### Static Analysis
+
 - Memory leaks detection
 - Array bounds checking
 - Uninitialized variable detection
@@ -149,11 +159,13 @@ Tools > Options > ReSharper C++
 ## Performance Tips
 
 ### Disable Unnecessary Inspections
+
 - Tools > Options > ReSharper C++
 - Uncheck unused inspections
 - Improves IDE responsiveness
 
 ### Configure Indexing
+
 - Exclude large directories
 - Focus on source files
 - Skip generated code
@@ -161,6 +173,7 @@ Tools > Options > ReSharper C++
 ---
 
 ## Resources
+
 - **Official Docs**: [jetbrains.com/help/resharper/cpp](https://www.jetbrains.com/help/resharper/cpp/)
 - **C++ Standard**: [cppreference.com](https://en.cppreference.com/)
 - **CMake**: [cmake.org](https://cmake.org/)

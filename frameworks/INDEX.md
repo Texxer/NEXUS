@@ -7,6 +7,7 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 ## 🎯 Quick Start
 
 **New to this collection?** Start here:
+
 1. **Choose your IDE** → See [IDE Decision Matrix](IDE_DECISION_MATRIX.md)
 2. **Read the tutorial** → Find your IDE below and open its TUTORIAL.md
 3. **Understand the architecture** → See [IDE Analysis](IDE_ANALYSIS.md)
@@ -19,10 +20,12 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 ### JetBrains IDEs (17 - All Proprietary)
 
 **Mobile & Desktop:**
+
 - [Android Studio](android-studio/TUTORIAL.md) - Official Google IDE for Android (Kotlin/Java)
 - [Rider](rider/TUTORIAL.md) - Cross-platform .NET IDE (C#/F#/VB.NET)
 
 **Languages - JVM & Compiled:**
+
 - [IntelliJ IDEA Community](intellij-community/TUTORIAL.md) - Free Java/Kotlin IDE
 - [IntelliJ IDEA Ultimate](intellij-ultimate/TUTORIAL.md) - Enterprise JVM IDE (Spring, Java EE)
 - [CLion](clion/TUTORIAL.md) - C/C++ IDE with CMake support
@@ -30,6 +33,7 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 - [GoLand](goland/TUTORIAL.md) - Go programming IDE
 
 **Languages - Interpreted:**
+
 - [PyCharm Community](pycharm-community/TUTORIAL.md) - Free Python IDE
 - [PyCharm Professional](pycharm-professional/TUTORIAL.md) - Python IDE (Django, Jupyter)
 - [PhpStorm](phpstorm/TUTORIAL.md) - PHP IDE (Laravel, Symfony, WordPress)
@@ -37,11 +41,13 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 - [RubyMine](rubymine/TUTORIAL.md) - Ruby & Rails IDE
 
 **Specialized Tools:**
+
 - [DataGrip](datagrip/TUTORIAL.md) - Advanced database IDE & SQL client
 - [DataSpell](dataspell/TUTORIAL.md) - Data science IDE (Jupyter, Python/R)
 - [Fleet](fleet/TUTORIAL.md) - Lightweight polyglot editor (Light/Smart modes)
 
 **IDE Extensions (for Visual Studio):**
+
 - [ReSharper](resharper/TUTORIAL.md) - C#/VB.NET code analysis in Visual Studio
 - [ReSharper C++](resharper-cpp/TUTORIAL.md) - C++ code analysis in Visual Studio
 
@@ -50,10 +56,12 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 ### Open Source Frameworks (8 - Cloned & Analyzed)
 
 **Text Editors / Modal Editors:**
+
 - [Vim](https://github.com/vim/vim) - Modal text editor (C/VimScript)
 - [Neovim](https://github.com/neovim/neovim) - Modern Vim fork (C/Lua)
 
 **Full IDEs:**
+
 - [VS Code](https://github.com/microsoft/vscode) - Modern electron-based IDE (TypeScript)
 - [IntelliJ Community](https://github.com/JetBrains/intellij-community) - Advanced IDE source (Java/Kotlin)
 - [Eclipse PDT](https://github.com/eclipse/pdt) - PHP IDE on Eclipse platform (Java)
@@ -62,6 +70,7 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 - [CodeLite](https://github.com/eranif/codelite) - Lightweight IDE (C++/wxWidgets)
 
 **Model Serving:**
+
 - [Ollama](https://github.com/ollama/ollama) - Local & cloud LLM serving (Go)
 
 ---
@@ -148,6 +157,7 @@ Complete reference for 32 IDE frameworks integrated into the NEXUS PRO developme
 ### Individual IDE Tutorials
 
 Each IDE has a comprehensive `TUTORIAL.md` covering:
+
 - Installation & system requirements
 - First-time setup
 - Project creation
@@ -162,6 +172,7 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 - Resources & documentation
 
 **Access tutorials:**
+
 - Navigate to `{ide-name}/TUTORIAL.md` in this directory
 - Or see table above for direct links
 
@@ -170,31 +181,37 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 ## 🔍 Feature Quick Reference
 
 ### Code Completion & IntelliSense
+
 **Best**: IntelliJ IDEs, WebStorm, PyCharm
 **Good**: CLion, Rider, RubyMine, GoLand
 **Reference**: See [IDE Decision Matrix](IDE_DECISION_MATRIX.md#-feature-comparison-matrix)
 
 ### Refactoring Engine
+
 **Best**: IntelliJ IDEs, Rider, PhpStorm
 **Good**: RubyMine, PyCharm, CLion, GoLand
 **Reference**: See individual TUTORIAL.md files
 
 ### Debugging & Profiling
+
 **Best**: All JetBrains IDEs with language support
 **Strong**: VS Code + extensions
 **Reference**: See [IDE Analysis](IDE_ANALYSIS.md)
 
 ### Testing Framework Integration
+
 **Best**: IntelliJ Ultimate, Rider, WebStorm, PyCharm Professional
 **Good**: All JetBrains IDEs
 **Reference**: See individual TUTORIAL.md files
 
 ### Database Tools
+
 **Specialized**: DataGrip (SQL IDE)
 **Included**: Rider, IntelliJ Ultimate, PyCharm Professional
 **Reference**: [DataGrip TUTORIAL](datagrip/TUTORIAL.md)
 
 ### Framework Support
+
 **Web Frameworks**: PhpStorm, PyCharm Professional, Rider, WebStorm
 **Mobile Frameworks**: Android Studio, Rider
 **Data Frameworks**: DataSpell, PyCharm Professional
@@ -205,6 +222,7 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 ## 🚀 Getting Started
 
 ### Step 1: Evaluate Your Needs
+
 - [ ] What language(s) will you use?
 - [ ] What frameworks/technologies?
 - [ ] What's your team size?
@@ -212,24 +230,28 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 - [ ] What are your system resources?
 
 ### Step 2: Check the Decision Matrix
+
 - Go to [IDE Decision Matrix](IDE_DECISION_MATRIX.md)
 - Use the Quick Decision Tree
 - Review feature comparisons
 - Check system requirements
 
 ### Step 3: Read the Tutorial
+
 - Find your chosen IDE above
 - Open its `TUTORIAL.md`
 - Follow installation steps
 - Complete the first project
 
 ### Step 4: Configure & Integrate
+
 - Customize keyboard shortcuts
 - Set up version control
 - Install framework-specific plugins
 - Configure debugging tools
 
 ### Step 5: Team Onboarding (Optional)
+
 - Use tutorials for team training
 - Establish code style guidelines
 - Set up shared configurations
@@ -240,17 +262,20 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 ## 🔗 External Resources
 
 ### Official Documentation
+
 - [JetBrains Help Center](https://www.jetbrains.com/help/)
 - [Android Studio Docs](https://developer.android.com/studio)
 - [VS Code Docs](https://code.visualstudio.com/docs)
 - [Ollama Docs](https://docs.ollama.com)
 
 ### Community & Support
+
 - [JetBrains Community Forums](https://intellij-support.jetbrains.com)
 - [Stack Overflow - IDE Questions](https://stackoverflow.com/questions/tagged/ide)
 - [Reddit - r/programming](https://reddit.com/r/programming)
 
 ### Training & Learning
+
 - [JetBrains Academy](https://www.jetbrains.com/academy/)
 - [YouTube - IDE Tutorials](https://www.youtube.com)
 - [Official IDE Blogs](https://blog.jetbrains.com)
@@ -274,24 +299,28 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 ## 🎓 Learning Path
 
 ### Beginner Developer
+
 1. Choose based on your language (Python → PyCharm, Java → IntelliJ, JS → WebStorm)
 2. Start with Community edition (free)
 3. Follow individual TUTORIAL.md
 4. Practice with sample projects
 
 ### Intermediate Developer
+
 1. Use [IDE Decision Matrix](IDE_DECISION_MATRIX.md) to optimize choice
 2. Explore Professional features
 3. Read [IDE Analysis](IDE_ANALYSIS.md) for architecture insights
 4. Consider tool specialization (DataGrip for database work, etc.)
 
 ### Advanced Developer
+
 1. Master multiple IDEs for different project types
 2. Customize configurations (keybindings, plugins, extensions)
 3. Integrate with CI/CD pipelines
 4. Contribute to IDE plugin ecosystems
 
 ### Enterprise Teams
+
 1. Evaluate cost vs. productivity with [Decision Matrix](IDE_DECISION_MATRIX.md)
 2. Use site licenses for scale
 3. Implement shared configurations
@@ -302,6 +331,7 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 ## 🔄 IDE Migration & Switching
 
 ### Moving Between IDEs
+
 - Most keyboard shortcuts can be remapped
 - Project formats often import automatically
 - Settings sync available (JetBrains)
@@ -309,7 +339,9 @@ Each IDE has a comprehensive `TUTORIAL.md` covering:
 - See [Decision Matrix - Migration Guide](IDE_DECISION_MATRIX.md#-migration-guide)
 
 ### Parallel IDE Usage
+
 Recommended for larger teams:
+
 - **Frontend**: WebStorm
 - **Backend**: Language-specific IDE (PyCharm, Rider, etc.)
 - **Database**: DataGrip
@@ -321,24 +353,28 @@ Recommended for larger teams:
 ## 📝 How to Use This Collection
 
 ### For Individual Developers
+
 1. Find your IDE in the list above
 2. Open its `TUTORIAL.md`
 3. Follow setup instructions
 4. Start coding!
 
 ### For Teams
+
 1. Review [IDE Decision Matrix](IDE_DECISION_MATRIX.md)
 2. Decide on standard IDEs by project type
 3. Share relevant TUTORIAL.md files
 4. Use this index as team reference
 
 ### For Project Leads
+
 1. Use [IDE Analysis](IDE_ANALYSIS.md) for architecture decisions
 2. Reference [Framework Index](FRAMEWORKS_INDEX.md) for integration points
 3. Share [Decision Matrix](IDE_DECISION_MATRIX.md) with team
 4. Use tutorials for onboarding new developers
 
 ### For Research & Development
+
 1. Study [IDE Analysis](IDE_ANALYSIS.md) for design patterns
 2. Review open-source implementations (Vim, Neovim, VS Code, Eclipse)
 3. Analyze plugin architectures
@@ -366,6 +402,7 @@ Recommended for larger teams:
 ## 🎯 Next Steps
 
 After choosing and setting up your IDE:
+
 1. **Explore plugins/extensions** for your specific needs
 2. **Customize appearance** (theme, font, layout)
 3. **Master shortcuts** for productivity

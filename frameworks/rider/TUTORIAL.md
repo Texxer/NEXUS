@@ -14,6 +14,7 @@ JetBrains Rider is a full-featured cross-platform IDE for .NET development. It p
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/rider](https://www.jetbrains.com/rider/)
 2. Install via Toolbox App
 3. On launch, select .NET SDK or framework
@@ -52,12 +53,14 @@ class Program {
 ## Key Features
 
 ### Code Intelligence
+
 - IntelliSense for C#/.NET APIs
 - Code completion with snippets
 - Refactoring: Rename, Extract, Introduce
 - Navigation: Go to definition, find usages
 
 ### Debugging
+
 - Breakpoints and conditional breaks
 - Step debugging (F10, F11)
 - Watch windows
@@ -65,18 +68,21 @@ class Program {
 - Multithreading support
 
 ### Testing
+
 - NUnit, xUnit, MSTest integration
 - Run tests from gutter
 - Test coverage analysis
 - Performance profiling
 
 ### Build & Deployment
+
 - MSBuild integration
 - NuGet package management
 - Publish profiles
 - Docker support
 
 ### Version Control
+
 - Git, SVN, Mercurial
 - Commit/Push/Pull
 - Branch management
@@ -87,17 +93,20 @@ class Program {
 ## Framework Support
 
 ### ASP.NET Core
+
 - Razor syntax highlighting
 - Template navigation
 - API documentation
 - Entity Framework assistance
 
 ### WPF
+
 - XAML designer
 - Data binding helpers
 - Resource dictionary support
 
 ### Unity (via plugin)
+
 - C# debugging in Unity Editor
 - Project structure navigation
 - Quick debugging
@@ -107,6 +116,7 @@ class Program {
 ## Workflow
 
 ### Building Console App
+
 ```
 1. Create Console Application
 2. Write code with full IntelliSense
@@ -117,6 +127,7 @@ class Program {
 ```
 
 ### ASP.NET Core API
+
 ```
 1. Create ASP.NET Core Web API
 2. Define models and controllers
@@ -129,6 +140,7 @@ class Program {
 ---
 
 ## Resources
+
 - Official Docs: [jetbrains.com/help/rider](https://www.jetbrains.com/help/rider/)
 - .NET Docs: [learn.microsoft.com/dotnet](https://learn.microsoft.com/dotnet)
 - C# Guide: [learn.microsoft.com/dotnet/csharp](https://learn.microsoft.com/dotnet/csharp)

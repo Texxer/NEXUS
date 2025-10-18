@@ -14,6 +14,7 @@ RubyMine is a full-featured IDE for Ruby and Ruby on Rails development by JetBra
 ## Quick Start
 
 ### Installation
+
 1. Download from [jetbrains.com/rubymine](https://www.jetbrains.com/rubymine/)
 2. Install Ruby and Ruby on Rails (or use rbenv)
 3. Install RubyMine via Toolbox
@@ -48,12 +49,14 @@ rails generate scaffold Post title:string content:text
 ## Key Features
 
 ### Code Intelligence
+
 - Ruby syntax highlighting
 - ERB template support
 - Rails helper completion
 - Gem reference documentation
 
 ### Debugging
+
 - Breakpoints with conditions
 - Step execution
 - Variable inspection
@@ -61,18 +64,21 @@ rails generate scaffold Post title:string content:text
 - Debug Rails requests
 
 ### Testing
+
 - RSpec framework integration
 - Cucumber/Gherkin support
 - Run tests from gutter
 - Coverage analysis
 
 ### Rails Tools
+
 - Routes navigation
 - View/Controller association
 - Model/Database schema sync
 - Rake tasks integration
 
 ### Refactoring
+
 - Rename safely across views
 - Extract method/partial
 - Move code between files
@@ -113,21 +119,25 @@ rails generate scaffold Post title:string content:text
 ## Common Tasks
 
 ### Database Management
+
 - View schema in IDE
 - Run migrations from IDE
 - Query database directly
 
 ### Gem Management
+
 - View Gemfile dependencies
 - Add gems with IDE assistant
 - Bundle install integration
 
 ### Running Server
+
 - Run > Run 'rails server'
 - View logs in console
 - Debug requests
 
 ### Testing
+
 - Run individual tests from gutter
 - Run entire test suite
 - Coverage analysis
@@ -136,6 +146,7 @@ rails generate scaffold Post title:string content:text
 ---
 
 ## Resources
+
 - Official Docs: [jetbrains.com/help/rubymine](https://www.jetbrains.com/help/rubymine/)
 - Ruby: [ruby-lang.org](https://ruby-lang.org/)
 - Rails: [rubyonrails.org](https://rubyonrails.org/)

@@ -12,6 +12,7 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 ## Enterprise Framework Support
 
 ### Spring Framework
+
 - Spring Boot project creation
 - Bean navigation and injection highlighting
 - Property file auto-completion
@@ -19,6 +20,7 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 - Request mapping navigation
 
 ### Java EE / Jakarta EE
+
 - Full servlet/JSP support
 - EJB development
 - Web application debugging
@@ -26,6 +28,7 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 - Connection pooling visualization
 
 ### Other Frameworks
+
 - Struts, Hibernate, Quarkus
 - Microprofile support
 - gRPC development
@@ -35,12 +38,14 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 ## Application Server Integration
 
 ### Tomcat
+
 - Configure server in IDE
 - Deploy application
 - View server logs
 - Debug server requests
 
 ### Other Servers
+
 - JBoss, WildFly, GlassFish
 - WebSphere, WebLogic
 - Jetty
@@ -50,17 +55,20 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 ## Advanced Debugging
 
 ### Remote Debugging
+
 - Debug on remote JVM
 - Connect to running application
 - Inspect remote variables
 - Modify breakpoints live
 
 ### Async Debugging
+
 - Debug async/await patterns
 - Thread debugging
 - Coroutine support
 
 ### Performance Profiling
+
 - CPU profiling
 - Memory profiling
 - Thread analysis
@@ -71,6 +79,7 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 ## Database Tools
 
 ### Database Explorer
+
 - Connect to databases
 - Browse schema
 - Write SQL queries
@@ -78,6 +87,7 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 - Generate entities from DB
 
 ### JPA/Hibernate Support
+
 - Entity mapping visualization
 - DDL generation
 - Database synchronization
@@ -87,17 +97,20 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 ## Additional Tools
 
 ### HTTP Client
+
 - Test REST APIs directly
 - Store requests
 - View responses
 - Generate code
 
 ### Docker Integration
+
 - Container management
 - Image building
 - Deployment to containers
 
 ### Kubernetes
+
 - YAML editing
 - Cluster management
 - Deployment configuration
@@ -124,6 +137,7 @@ IntelliJ IDEA Ultimate is the premium IDE for Java and polyglot development by J
 ---
 
 ## Resources
+
 - **Official Docs**: [jetbrains.com/help/idea](https://www.jetbrains.com/help/idea/)
 - **Spring Boot**: [spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
 - **Java EE**: [jakarta.ee](https://jakarta.ee/)
