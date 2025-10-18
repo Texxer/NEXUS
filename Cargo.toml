@@ -1,0 +1,43 @@
+[workspace]
+name = "zenith"
+version = "0.1.0"
+edition = "2021"
+
+members = [
+    "core",
+]
+
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+authors = ["Zenith Contributors"]
+license = "MIT"
+repository = "https://github.com/zenith-ide/zenith"
+homepage = "https://github.com/zenith-ide/zenith"
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Testing
+criterion = "0.5"
+
+# LSP and Protocol Buffers
+lsp-types = "0.95"

@@ -1,0 +1,14 @@
+{
+  "editor": {
+    "fontSize": 14,
+    "fontFamily": "Fira Code",
+    "tabSize": 2,
+    "insertSpaces": true,
+    "wordWrap": "on"
+  },
+  "theme": "nexus-dark",
+  "keybindings": "vs-code",
+  "plugins": {
+    "enabled": ["git", "eslint", "prettier"]
+  }
+}
