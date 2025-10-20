@@ -1,0 +1,38 @@
+.zenith-container {
+  width: 100%;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zenith-container.dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.zenith-container.light {
+  background-color: #ffffff;
+  color: #1e1e1e;
+}
+
+.zenith-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.zenith-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.zenith-editor-area {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

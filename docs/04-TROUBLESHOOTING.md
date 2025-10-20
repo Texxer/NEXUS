@@ -5,6 +5,7 @@
 **Symptoms**: Window opens but shows nothing
 
 **Solutions**:
+
 1. Check `src-tauri/tauri.conf.json` - CSP settings
 2. Open dev tools: Press `F12`
 3. Look for JavaScript errors in Console tab
@@ -21,6 +22,7 @@
 After `cargo tauri build`, the `.exe` still shows old version.
 
 **Solution**:
+
 ```powershell
 cargo clean
 cargo tauri build

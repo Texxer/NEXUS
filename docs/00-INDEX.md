@@ -26,7 +26,7 @@
 
 ---
 
-## I want to...
+## Next steps
 
 - **🚀 Start coding now** → [QUICK_START](01-QUICK_START.md)
 - **🔧 Understand the tech** → [ARCHITECTURE](02-ARCHITECTURE.md)
