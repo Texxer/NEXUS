@@ -4,9 +4,9 @@ Get NEXUS running in 5 minutes.
 
 ## Prerequisites
 
-- Rust 1.70+ ([https://rustup.rs](https://rustup.rs))
-- Node.js 18+ ([https://nodejs.org](https://nodejs.org))
-- Git
+� Rust 1.70+ ([https://rustup.rs](https://rustup.rs))
+� Node.js 18+ ([https://nodejs.org](https://nodejs.org))
+� Git
 
 ## Three Commands
 

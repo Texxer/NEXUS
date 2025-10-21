@@ -5,6 +5,7 @@ edition = "2021"
 
 members = [
     "core",
+    "src-tauri",
 ]
 
 resolver = "2"

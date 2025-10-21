@@ -1,0 +1,33 @@
+{
+  "productName": "NEXUS IDE",
+  "version": "0.1.0",
+  "identifier": "com.nexus.ide",
+  "build": {
+    "beforeBuildCommand": "",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../ui/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "NEXUS IDE",
+        "width": 1400,
+        "height": 900,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "nsis"],
+    "category": "Development",
+    "shortDescription": "Portable IDE for code analysis and language server",
+    "longDescription": "NEXUS: A lightweight, fast IDE built with Rust, React, and Tauri"
+  }
+}
+

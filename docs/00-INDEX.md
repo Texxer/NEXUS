@@ -19,19 +19,19 @@
 
 **Ultra-fast, open-source IDE** optimized for speed and minimalism.
 
-- **4.5 MB executable** (vs 150+ MB Electron)
-- **500ms startup** (vs 2-3s VS Code)
-- **Offline first** - no cloud, no tracking
-- **Built with**: Tauri 2.8 + Svelte 5 + WebView2
+� **4.5 MB executable** (vs 150+ MB Electron)
+� **500ms startup** (vs 2?3s VS Code)
+� **Offline first** - no cloud, no tracking
+� **Built with**: Tauri 2.8 + Svelte 5 + WebView2
 
 ---
 
 ## Next steps
 
-- **🚀 Start coding now** → [QUICK_START](01-QUICK_START.md)
-- **🔧 Understand the tech** → [ARCHITECTURE](02-ARCHITECTURE.md)
-- **📦 Build & deploy** → [BUILD](03-BUILD.md)
-- **🐛 Fix a problem** → [TROUBLESHOOTING](04-TROUBLESHOOTING.md)
+� **🚀 Start coding now** → [QUICK_START](01-QUICK_START.md)
+� **🔧 Understand the tech** → [ARCHITECTURE](02-ARCHITECTURE.md)
+� **📦 Build & deploy** → [BUILD](03-BUILD.md)
+� **🐛 Fix a problem** → [TROUBLESHOOTING](04-TROUBLESHOOTING.md)
 
 ---
 

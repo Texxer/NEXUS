@@ -1,29 +1,35 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-// Minimal NEXUS IDE executable
-// Serves the React frontend embedded or from disk
+// NEXUS IDE - Desktop Frontend
+// Tauri app that embeds React UI and communicates with Rust backend
 
-use std::path::Path;
+use tauri::Manager;
+
+#[tauri::command]
+async fn analyze_code(code: String) -> Result<String, String> {
+    // This will call into the core/ Rust backend
+    // For now, return a placeholder
+    Ok(format!("Analyzing {} chars of code...", code.len()))
+}
+
+#[tauri::command]
+async fn get_completions(file: String, line: usize, column: usize) -> Result<Vec<String>, String> {
+    // Call language server backend
+    Ok(vec!["fn".to_string(), "let".to_string(), "const".to_string()])
+}
+
+#[tauri::command]
+fn get_frontend_version() -> String {
+    env!("CARGO_PKG_VERSION").to_string()
+}
 
 fn main() {
-    println!("NEXUS IDE v0.1.0");
-    println!("Starting desktop application...");
-    
-    // Check if ui/dist exists
-    let dist_path = Path::new("ui/dist");
-    if dist_path.exists() {
-        println!("✓ Found frontend at {}", dist_path.display());
-    } else {
-        eprintln!("⚠ Frontend not found at {}", dist_path.display());
-        eprintln!("Run 'npm run build' in ui/ to build the frontend");
-    }
-    
-    // In a real build, this would:
-    // 1. Start a local HTTP server serving ui/dist
-    // 2. Create a WebView window pointing to http://localhost:PORT
-    // 3. Handle IPC for backend communication
-    
-    println!("Backend Rust modules available:");
-    println!("  - core:: (language server, code analysis)");
-    println!("\nApplication ready. (GUI functionality pending Tauri linking)");
+    tauri::Builder::default()
+        .invoke_handler(tauri::generate_handler![
+            analyze_code,
+            get_completions,
+            get_frontend_version
+        ])
+        .run(tauri::generate_context!())
+        .expect("error while running tauri application");
 }

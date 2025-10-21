@@ -6,9 +6,9 @@
 cargo tauri dev
 ```
 
-- Hot reload on file changes
-- Dev tools enabled
-- Faster iteration
+� Hot reload on file changes
+� Dev tools enabled
+� Faster iteration
 
 ## Production Build
 
@@ -16,9 +16,9 @@ cargo tauri dev
 cargo tauri build
 ```
 
-- Optimized executable
-- Smaller file size
-- Output: `target/release/nexus-pro.exe`
+� Optimized executable
+� Smaller file size
+� Output: `target/release/nexus-pro.exe`
 
 ## Build Optimization
 
@@ -35,7 +35,7 @@ This enables parallel compilation (70% faster builds).
 
 1. Build production version: `cargo tauri build`
 2. Executable location: `target/release/nexus-pro.exe` (4.5 MB)
-3. Share `.exe` file - no dependencies needed
+3. Share `.exe` file � no dependencies needed
 
 ---
 

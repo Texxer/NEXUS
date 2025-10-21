@@ -32,9 +32,9 @@ This forces a complete rebuild.
 
 ## Performance Issues
 
-- Check if CSP is blocking assets
-- Verify WebView2 is installed (Windows Update)
-- Enable parallel builds: `.cargo/config.toml` (jobs=8)
+� Check if CSP is blocking assets
+� Verify WebView2 is installed (Windows Update)
+� Enable parallel builds: `.cargo/config.toml` (jobs=8)
 
 ---
 
