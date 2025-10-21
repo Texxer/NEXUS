@@ -52,3 +52,7 @@ ollama/
 frameworks/
 NEXUS/
 
+# Documentation & scripts (auto-generated)
+docs/
+scripts/
+

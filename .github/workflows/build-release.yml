@@ -108,3 +108,62 @@ jobs:
           - Antivirus blocking build
           " | Write-Host -ForegroundColor Red
         shell: pwsh
+
+      - name: Extract Current Version
+        if: success()
+        id: current_version
+        run: |
+          $content = Get-Content 'src-tauri/tauri.conf.json' -Raw | ConvertFrom-Json
+          $version = $content.version
+          Write-Host "current_version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+        shell: pwsh
+
+      - name: Calculate Next Version
+        if: success()
+        id: next_version
+        run: |
+          $version = "${{ steps.current_version.outputs.current_version }}"
+          $parts = $version -split '\.'
+          $major, $minor, $patch = $parts
+          $patch = [int]$patch + 1
+          $nextVersion = "$major.$minor.$patch"
+          Write-Host "next_version=$nextVersion" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+        shell: pwsh
+
+      - name: Bump Version for Next Release
+        if: success()
+        run: |
+          $currentVersion = "${{ steps.current_version.outputs.current_version }}"
+          $nextVersion = "${{ steps.next_version.outputs.next_version }}"
+          
+          Write-Host "Bumping version: $currentVersion → $nextVersion" -ForegroundColor Cyan
+          
+          # Update Cargo.toml (root)
+          (Get-Content 'Cargo.toml' -Raw) -replace 'version = "[0-9.]+"', "version = `"$nextVersion`"" | Set-Content 'Cargo.toml'
+          
+          # Update src-tauri/Cargo.toml
+          (Get-Content 'src-tauri/Cargo.toml' -Raw) -replace 'version = "[0-9.]+"', "version = `"$nextVersion`"" | Set-Content 'src-tauri/Cargo.toml'
+          
+          # Update tauri.conf.json
+          $confContent = Get-Content 'src-tauri/tauri.conf.json' -Raw | ConvertFrom-Json
+          $confContent.version = $nextVersion
+          $confContent | ConvertTo-Json | Set-Content 'src-tauri/tauri.conf.json'
+          
+          # Update package.json
+          (Get-Content 'ui/package.json' -Raw) -replace '"version": "[0-9.]+"', "`"version`": `"$nextVersion`"" | Set-Content 'ui/package.json'
+          
+          Write-Host "✅ Version bumped to $nextVersion" -ForegroundColor Green
+        shell: pwsh
+
+      - name: Commit Version Bump
+        if: success()
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          $nextVersion = "${{ steps.next_version.outputs.next_version }}"
+          git add Cargo.toml src-tauri/Cargo.toml src-tauri/tauri.conf.json ui/package.json
+          git commit -m "chore: Bump version to $nextVersion [skip ci]"
+          git push origin main
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
