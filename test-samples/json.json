@@ -1,0 +1,22 @@
+{
+  "name": "nexus-pro",
+  "version": "0.1.3",
+  "description": "Professional IDE with Monaco Editor",
+  "editor": {
+    "lineNumbers": true,
+    "theme": "vs-dark",
+    "fontSize": 14,
+    "fontFamily": "Fira Code",
+    "minimap": {
+      "enabled": true
+    },
+    "languages": [
+      "javascript",
+      "typescript",
+      "python",
+      "rust",
+      "java",
+      "cpp"
+    ]
+  }
+}

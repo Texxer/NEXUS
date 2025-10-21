@@ -1,0 +1,21 @@
+/* Monaco Editor Test - CSS */
+
+:root {
+  --primary: #007acc;
+  --background: #1e1e1e;
+  --text: #cccccc;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.editor-header {
+  padding: 8px 16px;
+  border-bottom: 1px solid #464647;
+  font-weight: 500;
+}
