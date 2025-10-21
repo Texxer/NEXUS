@@ -5,17 +5,24 @@ interface StatusBarProps {
   onToggleTerminal: () => void;
   statusMessage?: string;
   analysisResult?: string;
+  detectedLanguage?: string;
 }
 
 export const StatusBar: React.FC<StatusBarProps> = ({ 
   onToggleTerminal,
   statusMessage = 'Ready',
-  analysisResult = ''
+  analysisResult = '',
+  detectedLanguage = 'Unknown'
 }) => {
   return (
     <div className="status-bar">
       <div className="status-left">
         <span className="status-item">✓ {statusMessage}</span>
+        {detectedLanguage && detectedLanguage !== 'Unknown' && (
+          <span className="status-item" style={{ marginLeft: '10px', color: '#ffc107' }}>
+            🔤 {detectedLanguage}
+          </span>
+        )}
         {analysisResult && (
           <span className="status-item" style={{ marginLeft: '10px', color: '#888' }}>
             {analysisResult}
@@ -26,9 +33,9 @@ export const StatusBar: React.FC<StatusBarProps> = ({
         <button 
           className="status-item"
           onClick={onToggleTerminal}
-          title="Toggle Terminal"
+          title="Toggle Terminal (Ctrl+`)"
         >
-          🖥️ Terminal
+          � Terminal
         </button>
       </div>
     </div>
