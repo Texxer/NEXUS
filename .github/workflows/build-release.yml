@@ -31,19 +31,37 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        continue-on-error: false
 
       - name: Build UI
         working-directory: ./ui
         run: npm run build
+        continue-on-error: false
 
       - name: Build Tauri App
+        id: build
         run: cargo build --release
+        continue-on-error: false
+
+      - name: Verify Build Artifacts
+        id: verify
+        run: |
+          $files = Get-ChildItem -Path 'target/release/' -Filter 'nexus-pro-v*.exe' -ErrorAction SilentlyContinue
+          if ($files.Count -eq 0) {
+            Write-Host "❌ ERROR: No executable found in target/release/"
+            exit 1
+          }
+          Write-Host "✅ Build artifact found: $($files[0].Name) ($([Math]::Round($files[0].Length / 1MB, 2)) MB)"
+        shell: pwsh
 
       - name: Create Release
+        id: release
         uses: softprops/action-gh-release@v1
         with:
           files: |
             target/release/nexus-pro-v*.exe
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -52,3 +70,41 @@ jobs:
         with:
           name: nexus-pro-build
           path: target/release/nexus-pro-v*.exe
+
+      - name: Build Success Summary
+        if: success()
+        run: |
+          Write-Host "
+          ╔════════════════════════════════════════════════════════════╗
+          ║              ✅ BUILD SUCCESSFUL                          ║
+          ╚════════════════════════════════════════════════════════════╝
+          
+          Release Tag: ${{ github.ref_name }}
+          Commit: ${{ github.sha }}
+          Status: Published to GitHub Releases
+          
+          Artifacts:
+          - nexus-pro-v*.exe (ready for download)
+          " | Write-Host -ForegroundColor Green
+
+      - name: Build Failure Summary
+        if: failure()
+        run: |
+          Write-Host "
+          ╔════════════════════════════════════════════════════════════╗
+          ║              ❌ BUILD FAILED                              ║
+          ╚════════════════════════════════════════════════════════════╝
+          
+          Release Tag: ${{ github.ref_name }}
+          Commit: ${{ github.sha }}
+          Failed Step: ${{ job.status }}
+          
+          Check logs at: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          Common causes:
+          - Cargo build error (see logs above)
+          - NPM dependency issue
+          - Missing Rust targets
+          - Antivirus blocking build
+          " | Write-Host -ForegroundColor Red
+        shell: pwsh
