@@ -50,11 +50,6 @@
   - New features & fixes
   - Versioning strategy
 
-- **[10-AVG-ANTIVIRUS-FIX.md](10-AVG-ANTIVIRUS-FIX.md)** - Windows Defender / AVG guide
-  - Why AVG blocks builds
-  - Workarounds and exclusions
-  - Manual build methods
-
 ### 🤝 Community
 - **[06-CONTRIBUTING.md](06-CONTRIBUTING.md)** - How to contribute
   - Bug reporting
@@ -68,6 +63,12 @@
   - Creating releases (3 steps!)
   - Release versioning
   - Troubleshooting CI/CD
+
+- **[10-BUILD-PROGRESS.md](10-BUILD-PROGRESS.md)** - Development timeline
+  - Week-by-week progress summary
+  - Performance metrics & targets
+  - Build history & release notes
+  - Time investment analysis
 
 ---
 
@@ -100,6 +101,7 @@
 
 | File | Purpose | Audience |
 |------|---------|----------|
+| 00-INDEX.md | Documentation roadmap | Everyone |
 | 01-GETTING-STARTED.md | Quick setup guide | Everyone |
 | 02-ARCHITECTURE.md | Tech stack details | Developers |
 | 03-BUILD.md | Building from source | Developers |
@@ -109,7 +111,7 @@
 | 07-CHANGELOG.md | Version history | Everyone |
 | 08-ROADMAP.md | Future plans | Everyone |
 | 09-GITHUB-ACTIONS.md | CI/CD automation | Release team |
-| 10-AVG-ANTIVIRUS-FIX.md | AV workarounds | Windows users |
+| 10-BUILD-PROGRESS.md | Development timeline | Project managers |
 
 ---
 
@@ -123,8 +125,8 @@
 **Build from source**
 → [03-BUILD.md](03-BUILD.md)
 
-**Fix antivirus issues**
-→ [10-AVG-ANTIVIRUS-FIX.md](10-AVG-ANTIVIRUS-FIX.md)
+**See build progress & timeline**
+→ [10-BUILD-PROGRESS.md](10-BUILD-PROGRESS.md)
 
 **Contribute code**
 → [06-CONTRIBUTING.md](06-CONTRIBUTING.md)
