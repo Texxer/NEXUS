@@ -1,0 +1,81 @@
+================================================================================
+                    GIT IGNORE ENFORCEMENT POLICY
+================================================================================
+
+CRITICAL: The following directories must NEVER be pushed to Git
+
+EXCLUDED DIRECTORIES
+====================
+
+frameworks/          - IDE frameworks analysis (vim, neovim, vscode, etc.)
+                      Size: ~1GB+ (too large for repository)
+                      These are local analysis files only
+
+NEXUS/               - Old NEXUS directory structure
+                      Use /core instead for active development
+
+models/              - Ollama model files (local only)
+
+ollama/              - Ollama runtime files (local only)
+
+backup/              - Local backup directory
+
+Also excluded (in .gitignore):
+target/              - Build artifacts
+node_modules/        - Node dependencies
+venv/                - Python virtual environments
+.vscode/             - VS Code settings
+.env                 - Environment files with secrets
+
+
+VERIFICATION CHECKLIST
+======================
+
+✓ Is frameworks/ in .gitignore?
+  Answer: YES - it's listed
+
+✓ Are there any tracked files in frameworks/?
+  Run: git ls-files frameworks/
+  Expected output: (empty - no output means nothing is tracked)
+
+✓ Before pushing:
+  Run: git status
+  Expected: "nothing to commit, working tree clean"
+
+
+ENFORCEMENT RULES
+=================
+
+1. NEVER manually add anything from frameworks/:
+   DON'T do: git add frameworks/*
+   DON'T do: git add -A frameworks/
+
+2. If accidentally added, remove from index:
+   git rm -r --cached frameworks/
+
+3. Always verify before pushing:
+   git ls-files frameworks/
+   (Should return nothing)
+
+4. If needing to update frameworks locally:
+   - Make changes directly to /frameworks
+   - Verify git status shows it as "Untracked"
+   - NEVER commit or push
+
+
+HISTORY
+=======
+
+All framework source code was previously removed from Git history:
+- Commit: "fix: Re-gitignore frameworks/ folder and untrack from cache"
+- Action: Cleaned up entire frameworks/ folder from repository
+- Result: Reduced repository size significantly
+
+
+CURRENT STATUS
+==============
+
+✓ frameworks/ is in .gitignore
+✓ frameworks/ is NOT in git index
+✓ No framework files will be pushed
+✓ Safe to work with framework files locally
