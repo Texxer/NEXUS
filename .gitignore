@@ -49,10 +49,14 @@ coverage/
 backup/
 models/
 ollama/
-frameworks/
 NEXUS/
 
 # Documentation & scripts (auto-generated)
 docs/
 scripts/
+
+# Temporary build artifacts
+*.exe
+*.dll
+*.so
 
