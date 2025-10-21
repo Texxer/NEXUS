@@ -1,6 +1,6 @@
 [package]
-name = "nexus-tauri"
-version = "0.1.0"
+name = "nexus-pro"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
@@ -12,5 +12,5 @@ serde_json = "1"
 tauri-build = "2"
 
 [[bin]]
-name = "nexus-ide"
+name = "nexus-pro"
 path = "src/main.rs"

@@ -1,6 +1,6 @@
 {
-  "productName": "NEXUS IDE",
-  "version": "0.1.0",
+  "productName": "NEXUS Pro",
+  "version": "0.1.1",
   "identifier": "com.nexus.ide",
   "build": {
     "beforeBuildCommand": "",

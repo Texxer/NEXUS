@@ -1,6 +1,6 @@
 [workspace]
-name = "zenith"
-version = "0.1.0"
+name = "nexus-pro"
+version = "0.1.1"
 edition = "2021"
 
 members = [
@@ -11,13 +11,13 @@ members = [
 resolver = "2"
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.70"
-authors = ["Zenith Contributors"]
+authors = ["NEXUS Contributors"]
 license = "MIT"
-repository = "https://github.com/zenith-ide/zenith"
-homepage = "https://github.com/zenith-ide/zenith"
+repository = "https://github.com/Texxer/NEXUS"
+homepage = "https://github.com/Texxer/NEXUS"
 
 [workspace.dependencies]
 # Async runtime

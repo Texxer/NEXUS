@@ -24,18 +24,21 @@
 ## What's Inside
 
 ### Frontend ⚛️
+
 - **React 18** - Modern UI framework
 - **Vite 5** - Lightning-fast build tool
 - **Tailwind CSS 3** - Utility-first styling
 - **20 KB optimized** - Ultra-lean production build
 
 ### Backend 🦀
+
 - **Rust 1.90** - Systems programming
 - **Tauri 2** - Desktop framework
 - **WebView2** - Windows rendering engine
 - **Tokio** - Async runtime
 
 ### Features ✨
+
 - ✅ Code editor with syntax highlighting
 - ✅ File explorer & sidebar
 - ✅ Terminal panel
@@ -52,6 +55,7 @@
 Start here → **[docs/00-README.md](docs/00-README.md)**
 
 All docs are numbered for easy navigation:
+
 - **00-README.md** - Project overview
 - **01-QUICK_START.md** - Get running in 5 minutes
 - **02-ARCHITECTURE.md** - Tech stack & design
@@ -115,18 +119,21 @@ All docs are numbered for easy navigation:
 ## Features & Roadmap
 
 ### v0.1.1 ✅ Current
+
 - Portable IDE with UI
 - Tauri desktop app
 - React frontend
 - Rust backend foundation
 
 ### v0.2.0 🎯 Next
+
 - [ ] Real code analysis
 - [ ] File I/O & projects
 - [ ] Syntax highlighting with tree-sitter
 - [ ] Settings panel
 
 ### v0.3.0+ 📈 Future
+
 - [ ] Language Server Protocol (LSP)
 - [ ] Multi-language support
 - [ ] AI completions (Ollama ready)
@@ -138,6 +145,7 @@ All docs are numbered for easy navigation:
 ## Build from Source
 
 ### Prerequisites
+
 - Rust 1.90+
 - Node.js 20+
 - Windows 10+ (or use WSL)
@@ -169,11 +177,13 @@ cargo build --release
 ## Known Issues
 
 ### Antivirus Blocking (Windows Defender / AVG)
+
 - **Issue**: Build scripts may trigger AV heuristics
 - **Workaround**: Add `.cargo` to antivirus exclusions
 - **Details**: See [docs/05-AVG-ANTIVIRUS-FIX.md](docs/05-AVG-ANTIVIRUS-FIX.md)
 
 ### Other Notes
+
 - Some experimental modules disabled for v0.1.1
 - Will be enabled in v0.2.0+ with dependencies fixed
 
@@ -184,16 +194,19 @@ cargo build --release
 ### Project Organization
 
 **Clean Root**
+
 - Only essential files: `Cargo.toml`, `LICENSE`, `.git`
 - All scripts in `scripts/`
 - All docs in `docs/` (numbered 00-10)
 
 **Modular Structure**
+
 - `ui/` - Frontend (independent, can run separately)
 - `core/` - Rust LSP backend (library)
 - `src-tauri/` - Desktop integration (depends on ui + core)
 
 ### Contributing
+
 - Follow Rust naming conventions
 - Use `cargo fmt` before commits
 - Update docs when adding features
