@@ -1,90 +1,151 @@
-# NEXUS Documentation Index
+# Documentation Index
 
-**v0.1.1** • Fast, offline IDE built with Tauri + React
-
----
-
-## Quick Start
-
-| Section | Time |
-|---------|------|
-| **[01-QUICK_START](01-QUICK_START.md)** | 5 min |
-| **[02-ARCHITECTURE](02-ARCHITECTURE.md)** | 15 min |
-| **[03-BUILD](03-BUILD.md)** | 10 min |
-| **[04-TROUBLESHOOTING](04-TROUBLESHOOTING.md)** | 5 min |
-| **[05-AVG-ANTIVIRUS-FIX](05-AVG-ANTIVIRUS-FIX.md)** | 5 min |
+**NEXUS Pro v0.1.1** - Complete documentation guide
 
 ---
 
-## What is NEXUS?
+## Quick Navigation
 
-**Ultra-fast, open-source IDE** optimized for speed and minimalism.
+### 🚀 Getting Started
+- **[01-GETTING-STARTED.md](01-GETTING-STARTED.md)** - New to NEXUS Pro? Start here!
+  - Download & quick start
+  - System requirements
+  - Basic features overview
 
-� **4.5 MB executable** (vs 150+ MB Electron)
-� **500ms startup** (vs 2?3s VS Code)
-� **Offline first** - no cloud, no tracking
-� **Built with**: Tauri 2.8 + Svelte 5 + WebView2
+### 🏗️ Technical
+- **[02-ARCHITECTURE.md](02-ARCHITECTURE.md)** - How NEXUS Pro is built
+  - Frontend stack (React + Vite + Tailwind)
+  - Desktop framework (Tauri + WebView2)
+  - Backend architecture (Rust + Tokio)
+  - IPC communication layer
 
----
+- **[03-BUILD.md](03-BUILD.md)** - Build from source
+  - Prerequisites & setup
+  - Step-by-step build instructions
+  - Troubleshooting build issues
+  - Performance optimization tips
 
-## Next steps
+### ✨ Features & Planning
+- **[05-FEATURES.md](05-FEATURES.md)** - Complete feature matrix
+  - Current features (v0.1.1)
+  - Planned features (v0.1.2+)
+  - Language support roadmap
+  - Comparison matrix
 
-� **🚀 Start coding now** → [QUICK_START](01-QUICK_START.md)
-� **🔧 Understand the tech** → [ARCHITECTURE](02-ARCHITECTURE.md)
-� **📦 Build & deploy** → [BUILD](03-BUILD.md)
-� **🐛 Fix a problem** → [TROUBLESHOOTING](04-TROUBLESHOOTING.md)
+- **[08-ROADMAP.md](08-ROADMAP.md)** - Future direction
+  - Upcoming releases
+  - Feature timeline
+  - Long-term vision
+  - How to contribute ideas
 
----
+### 📖 Reference
+- **[04-TROUBLESHOOTING.md](04-TROUBLESHOOTING.md)** - Common issues & solutions
+  - Antivirus problems
+  - Performance issues
+  - Build errors
+  - Runtime problems
 
-## Technology Stack
+- **[07-CHANGELOG.md](07-CHANGELOG.md)** - Version history
+  - What changed in each release
+  - New features & fixes
+  - Versioning strategy
 
-```
-Frontend  │ Svelte 5 + Vite 7 + Tailwind 3
-Desktop   │ Tauri 2.8 + WebView2
-Backend   │ Rust (Tower-LSP planned)
-Build     │ Cargo + npm
-```
+- **[10-AVG-ANTIVIRUS-FIX.md](10-AVG-ANTIVIRUS-FIX.md)** - Windows Defender / AVG guide
+  - Why AVG blocks builds
+  - Workarounds and exclusions
+  - Manual build methods
 
----
+### 🤝 Community
+- **[06-CONTRIBUTING.md](06-CONTRIBUTING.md)** - How to contribute
+  - Bug reporting
+  - Feature requests
+  - Code contributions
+  - Development setup
+  - Code style guidelines
 
-## Project Structure
-
-```
-NEXUS/
-├── ui/              # Svelte frontend
-│   ├── src/
-│   │   ├── App.svelte
-│   │   ├── main.ts
-│   │   └── hooks/
-│   ├── index.html
-│   └── package.json
-│
-├── core/            # Rust backend (LSP)
-│   ├── src/
-│   └── Cargo.toml
-│
-├── src-tauri/       # Tauri bridge
-│   ├── tauri.conf.json
-│   └── src/main.rs
-│
-└── docs/            # This folder
-```
-
----
-
-## Common Commands
-
-```powershell
-# Development
-cargo tauri dev
-
-# Production build
-cargo tauri build
-
-# Run
-.\target\release\nexus-pro.exe
-```
+- **[09-GITHUB-ACTIONS.md](09-GITHUB-ACTIONS.md)** - Release automation
+  - How GitHub Actions works
+  - Creating releases (3 steps!)
+  - Release versioning
+  - Troubleshooting CI/CD
 
 ---
 
-**Start with [01-QUICK_START.md](01-QUICK_START.md)** → 5 minutes to running 🎯
+## By Role
+
+### 👤 End Users
+1. Start with [01-GETTING-STARTED.md](01-GETTING-STARTED.md)
+2. Check [04-TROUBLESHOOTING.md](04-TROUBLESHOOTING.md) if issues
+3. See [05-FEATURES.md](05-FEATURES.md) for what's available
+
+### 💻 Developers
+1. Read [02-ARCHITECTURE.md](02-ARCHITECTURE.md) to understand the codebase
+2. Follow [03-BUILD.md](03-BUILD.md) to build locally
+3. Check [06-CONTRIBUTING.md](06-CONTRIBUTING.md) to contribute
+4. See [09-GITHUB-ACTIONS.md](09-GITHUB-ACTIONS.md) for releasing
+
+### 📊 Project Managers
+1. Review [05-FEATURES.md](05-FEATURES.md) for features
+2. Check [08-ROADMAP.md](08-ROADMAP.md) for timeline
+3. Read [07-CHANGELOG.md](07-CHANGELOG.md) for progress
+
+### 🚀 Release Managers
+1. See [09-GITHUB-ACTIONS.md](09-GITHUB-ACTIONS.md) for automated releases
+2. Check [07-CHANGELOG.md](07-CHANGELOG.md) for version info
+3. Follow [06-CONTRIBUTING.md](06-CONTRIBUTING.md) for PR reviews
+
+---
+
+## File Descriptions
+
+| File | Purpose | Audience |
+|------|---------|----------|
+| 01-GETTING-STARTED.md | Quick setup guide | Everyone |
+| 02-ARCHITECTURE.md | Tech stack details | Developers |
+| 03-BUILD.md | Building from source | Developers |
+| 04-TROUBLESHOOTING.md | Common problems | Everyone |
+| 05-FEATURES.md | Feature matrix | Everyone |
+| 06-CONTRIBUTING.md | Contributing guide | Contributors |
+| 07-CHANGELOG.md | Version history | Everyone |
+| 08-ROADMAP.md | Future plans | Everyone |
+| 09-GITHUB-ACTIONS.md | CI/CD automation | Release team |
+| 10-AVG-ANTIVIRUS-FIX.md | AV workarounds | Windows users |
+
+---
+
+## Common Tasks
+
+### I want to...
+
+**Use NEXUS Pro**
+→ [01-GETTING-STARTED.md](01-GETTING-STARTED.md)
+
+**Build from source**
+→ [03-BUILD.md](03-BUILD.md)
+
+**Fix antivirus issues**
+→ [10-AVG-ANTIVIRUS-FIX.md](10-AVG-ANTIVIRUS-FIX.md)
+
+**Contribute code**
+→ [06-CONTRIBUTING.md](06-CONTRIBUTING.md)
+
+**Create a release**
+→ [09-GITHUB-ACTIONS.md](09-GITHUB-ACTIONS.md)
+
+**Report a bug**
+→ [04-TROUBLESHOOTING.md](04-TROUBLESHOOTING.md), then [GitHub Issues](https://github.com/Texxer/NEXUS/issues)
+
+**Request a feature**
+→ [08-ROADMAP.md](08-ROADMAP.md), then [GitHub Discussions](https://github.com/Texxer/NEXUS/discussions)
+
+**See what's new**
+→ [07-CHANGELOG.md](07-CHANGELOG.md)
+
+**Understand the architecture**
+→ [02-ARCHITECTURE.md](02-ARCHITECTURE.md)
+
+---
+
+**All docs are in Markdown format and can be read in any text editor or on GitHub.**
+
+**Last updated**: October 2025 | NEXUS Pro v0.1.1
