@@ -1,6 +1,6 @@
 # NEXUS Documentation Index
 
-**v0.2.0** • Fast, offline IDE built with Tauri + Svelte
+**v0.1.1** • Fast, offline IDE built with Tauri + React
 
 ---
 
@@ -8,10 +8,11 @@
 
 | Section | Time |
 |---------|------|
-| **[00-QUICK_START](01-QUICK_START.md)** | 5 min |
-| **[01-ARCHITECTURE](02-ARCHITECTURE.md)** | 15 min |
-| **[02-BUILD](03-BUILD.md)** | 10 min |
-| **[03-TROUBLESHOOTING](04-TROUBLESHOOTING.md)** | 5 min |
+| **[01-QUICK_START](01-QUICK_START.md)** | 5 min |
+| **[02-ARCHITECTURE](02-ARCHITECTURE.md)** | 15 min |
+| **[03-BUILD](03-BUILD.md)** | 10 min |
+| **[04-TROUBLESHOOTING](04-TROUBLESHOOTING.md)** | 5 min |
+| **[05-AVG-ANTIVIRUS-FIX](05-AVG-ANTIVIRUS-FIX.md)** | 5 min |
 
 ---
 

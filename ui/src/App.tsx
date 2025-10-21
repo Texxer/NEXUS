@@ -4,7 +4,7 @@ import { Editor } from './components/Editor';
 import { Sidebar } from './components/Sidebar';
 import { StatusBar } from './components/StatusBar';
 import { Terminal } from './components/Terminal';
-import { analyzeCode, getCompletions } from './tauri-api';
+import { analyzeCode } from './tauri-api';
 import './App.css';
 
 function App() {
@@ -35,12 +35,12 @@ function App() {
   };
 
   // Get completions when user presses Ctrl+Space
-  const handleGetCompletions = async () => {
-    if (activeFile) {
-      const completions = await getCompletions(activeFile, 0, code.length);
-      console.log('Completions:', completions);
-    }
-  };
+  // const handleGetCompletions = async () => {
+  //   if (activeFile) {
+  //     const completions = await getCompletions(activeFile, 0, code.length);
+  //     console.log('Completions:', completions);
+  //   }
+  // };
 
   return (
     <div className={`zenith-container ${theme}`}>
