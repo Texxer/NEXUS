@@ -49,6 +49,7 @@ coverage/
 backup/
 models/
 ollama/
+frameworks/
 NEXUS/
 
 # Documentation & scripts (auto-generated)
