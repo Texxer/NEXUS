@@ -8,6 +8,7 @@ interface MonacoEditorProps {
   onChange: (content: string) => void;
   onSave: () => void;
   onOpen: () => void;
+  onSaveAs?: () => void;
 }
 
 /**
@@ -26,6 +27,7 @@ export const MonacoEditor = ({
   onChange,
   onSave,
   onOpen,
+  onSaveAs,
 }: MonacoEditorProps) => {
   const editorRef = useRef<editorType.IStandaloneCodeEditor | null>(null);
   useMonaco();
@@ -128,13 +130,19 @@ export const MonacoEditor = ({
     const editor = editorRef.current;
     if (!editor) return;
 
-    // Handle Ctrl+S, Ctrl+O, Ctrl+/ using editor's onKeyDown event
+    // Handle Ctrl+S, Ctrl+O, Ctrl+Shift+S, Ctrl+/ using editor's onKeyDown event
     const keydownListener = editor.onKeyDown((e) => {
       // Ctrl+S - Save (keyCode 49 = 'S')
-      if (e.ctrlKey && e.keyCode === 49) {
+      if (e.ctrlKey && e.keyCode === 49 && !e.shiftKey) {
         e.preventDefault();
         console.log('✅ Ctrl+S pressed (Monaco) - saving');
         onSave();
+      }
+      // Ctrl+Shift+S - Save As (keyCode 49 = 'S', shift=true)
+      else if (e.ctrlKey && e.shiftKey && e.keyCode === 49) {
+        e.preventDefault();
+        console.log('✅ Ctrl+Shift+S pressed (Monaco) - save as');
+        onSaveAs?.();
       }
       // Ctrl+O - Open (keyCode 48 = 'O')
       else if (e.ctrlKey && e.keyCode === 48) {
@@ -150,7 +158,7 @@ export const MonacoEditor = ({
     });
 
     return () => keydownListener?.dispose();
-  }, [onSave, onOpen]);
+  }, [onSave, onOpen, onSaveAs]);
 
   // Focus editor on file change
   useEffect(() => {
@@ -175,6 +183,7 @@ export const MonacoEditor = ({
         </span>
         <div className="editor-shortcuts">
           <span title="Ctrl+S - Save">💾</span>
+          <span title="Ctrl+Shift+S - Save As">💾📝</span>
           <span title="Ctrl+O - Open">📂</span>
           <span title="Ctrl+/ - Comment">💬</span>
           <span title="Ctrl+` - Terminal">⌨️</span>
