@@ -37,19 +37,25 @@ function App() {
     loadFilesFromDir(currentDir);
   }, []);
 
-  // Setup Ctrl+` to toggle terminal
+  // Setup global keyboard shortcuts
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      // Ctrl+` or Cmd+` - Toggle terminal
       if ((e.ctrlKey || e.metaKey) && e.key === '`') {
         e.preventDefault();
         setShowTerminal(prev => !prev);
         setStatusMessage(`Terminal ${showTerminal ? 'closed' : 'opened'}`);
       }
+      // Ctrl+S or Cmd+S - Save file
+      else if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        handleSave();
+      }
     };
 
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
-  }, [showTerminal]);
+  }, [showTerminal, activeFile, code]);
 
   // Handle file selection and load
   const handleSelectFile = async (file: string) => {
