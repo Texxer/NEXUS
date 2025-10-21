@@ -1,0 +1,11 @@
+# Rust Cargo Configuration - Optimized Build Speed
+# Documentation: https://doc.rust-lang.org/cargo/reference/config.html
+
+[build]
+# Use all available CPU cores for parallel compilation
+jobs = 8
+# Windows Defender workaround: Use rustflags to avoid heuristic detection
+rustflags = ["-C", "embed-bitcode=no"]
+# Disable parallel downloads which can trigger AV
+concurrent-downloads = 1
+

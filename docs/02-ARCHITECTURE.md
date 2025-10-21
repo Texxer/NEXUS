@@ -13,11 +13,11 @@ NEXUS is built on three layers: frontend UI, desktop bridge, and Rust backend.
 
 ## Why This Stack
 
-- **Tauri**: 30x smaller than Electron, native performance
-- **React**: Proven ecosystem, component reusability
-- **Vite**: Instant hot reload, optimized production builds
-- **Rust**: Memory-safe, perfect for language servers
-- **WebView2**: Native on Windows 10+
+� **Tauri**: 30x smaller than Electron, native performance
+� **React**: Proven ecosystem, component reusability
+� **Vite**: Instant hot reload, optimized production builds
+� **Rust**: Memory-safe, perfect for language servers
+� **WebView2**: Native on Windows 10+
 
 ## Project Structure
 

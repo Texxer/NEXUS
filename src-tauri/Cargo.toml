@@ -1,0 +1,11 @@
+[package]
+name = "nexus-tauri"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Minimal dependencies - no heavy macros or build scripts
+
+[[bin]]
+name = "nexus-ide"
+path = "src/main.rs"
