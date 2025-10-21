@@ -16,14 +16,15 @@ export interface CompletionItem {
 // Call Rust backend to analyze code
 export async function analyzeCode(code: string): Promise<string> {
   if (!window.__TAURI__) {
-    return "Tauri not available in this environment";
+    console.warn('Tauri not available - running in development mode');
+    return `[DEV] Analyzed ${code.length} chars`;
   }
   
   try {
     return await window.__TAURI__.invoke('analyze_code', { code });
   } catch (error) {
     console.error('Error analyzing code:', error);
-    return "Error analyzing code";
+    return "Code analysis unavailable";
   }
 }
 
