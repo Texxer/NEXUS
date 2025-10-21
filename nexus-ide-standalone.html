@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS IDE - Advanced Code Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #e0e0e0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .titlebar {
+            background: #2d2d30;
+            padding: 10px 15px;
+            border-bottom: 1px solid #3e3e42;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            -webkit-app-region: drag;
+            user-select: none;
+        }
+
+        .titlebar-title {
+            font-size: 13px;
+            font-weight: 500;
+            color: #cccccc;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #252526;
+            border-right: 1px solid #3e3e42;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-title {
+            padding: 10px 15px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #b4b4b4;
+            border-bottom: 1px solid #3e3e42;
+        }
+
+        .file-explorer {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px 0;
+        }
+
+        .file-item {
+            padding: 6px 15px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #cccccc;
+            user-select: none;
+        }
+
+        .file-item:hover {
+            background: #2d2d30;
+        }
+
+        .file-item.active {
+            background: #0e639c;
+            color: #fff;
+        }
+
+        .editor-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .tab-bar {
+            background: #1e1e1e;
+            border-bottom: 1px solid #3e3e42;
+            display: flex;
+            padding: 0 10px;
+            align-items: center;
+            max-height: 35px;
+            overflow-x: auto;
+        }
+
+        .tab {
+            padding: 8px 15px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            font-size: 12px;
+            color: #858585;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            margin-right: 5px;
+        }
+
+        .tab.active {
+            color: #e0e0e0;
+            border-bottom: 2px solid #0e639c;
+            background: #1e1e1e;
+        }
+
+        .tab:hover {
+            color: #cccccc;
+        }
+
+        .editor {
+            flex: 1;
+            overflow: hidden;
+            background: #1e1e1e;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border: none;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            resize: none;
+            outline: none;
+        }
+
+        textarea::selection {
+            background: #264f78;
+        }
+
+        .status-bar {
+            background: #007acc;
+            padding: 5px 15px;
+            font-size: 11px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            border-top: 1px solid #3e3e42;
+        }
+
+        .status-section {
+            display: flex;
+            gap: 20px;
+        }
+
+        .status-item {
+            cursor: pointer;
+            padding: 2px 8px;
+        }
+
+        .status-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar::-webkit-scrollbar,
+        .tab-bar::-webkit-scrollbar,
+        textarea::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        .sidebar::-webkit-scrollbar-track,
+        .tab-bar::-webkit-scrollbar-track,
+        textarea::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb,
+        .tab-bar::-webkit-scrollbar-thumb,
+        textarea::-webkit-scrollbar-thumb {
+            background: #464647;
+            border-radius: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover,
+        .tab-bar::-webkit-scrollbar-thumb:hover,
+        textarea::-webkit-scrollbar-thumb:hover {
+            background: #5a5a5a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titlebar">
+            <div class="titlebar-title">NEXUS IDE v0.1.0</div>
+            <div style="font-size: 12px; color: #858585;">Advanced Code Editor</div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="sidebar-title">Explorer</div>
+                <div class="file-explorer" id="fileExplorer"></div>
+            </div>
+
+            <div class="editor-area">
+                <div class="tab-bar" id="tabBar"></div>
+                <div class="editor">
+                    <textarea id="codeEditor" placeholder="// Write your code here..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-section">
+                <div class="status-item" id="lineCol">Line 1, Column 1</div>
+                <div class="status-item" id="fileInfo">No file selected</div>
+            </div>
+            <div class="status-section">
+                <div class="status-item">UTF-8</div>
+                <div class="status-item">CRLF</div>
+                <div class="status-item">JavaScript</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample files
+        const files = [
+            { name: 'main.ts', path: 'src/main.ts', language: 'typescript' },
+            { name: 'editor.ts', path: 'src/editor.ts', language: 'typescript' },
+            { name: 'analyzer.ts', path: 'src/analyzer.ts', language: 'typescript' },
+            { name: 'README.md', path: 'README.md', language: 'markdown' },
+        ];
+
+        let currentFile = null;
+        const fileContent = {};
+
+        // Initialize file explorer
+        function initExplorer() {
+            const explorer = document.getElementById('fileExplorer');
+            files.forEach(file => {
+                const item = document.createElement('div');
+                item.className = 'file-item';
+                item.textContent = file.name;
+                item.onclick = () => selectFile(file);
+                explorer.appendChild(item);
+            });
+        }
+
+        // Select file
+        function selectFile(file) {
+            currentFile = file;
+            const editor = document.getElementById('codeEditor');
+            
+            // Load or create content
+            if (!fileContent[file.path]) {
+                fileContent[file.path] = `// File: ${file.name}\n// Language: ${file.language}\n\n// Start editing...`;
+            }
+
+            editor.value = fileContent[file.path];
+
+            // Update UI
+            document.querySelectorAll('.file-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update tab
+            updateTabs();
+
+            // Update status
+            document.getElementById('fileInfo').textContent = file.path;
+        }
+
+        // Update tabs
+        function updateTabs() {
+            if (!currentFile) return;
+            
+            const tabBar = document.getElementById('tabBar');
+            const existingTab = Array.from(tabBar.children).find(t => 
+                t.textContent.trim() === currentFile.name
+            );
+
+            if (!existingTab) {
+                const tab = document.createElement('div');
+                tab.className = 'tab active';
+                tab.textContent = currentFile.name;
+                tab.onclick = () => selectFile(currentFile);
+                tabBar.appendChild(tab);
+            } else {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                existingTab.classList.add('active');
+            }
+        }
+
+        // Update line and column
+        document.getElementById('codeEditor').addEventListener('keyup', (e) => {
+            const textarea = e.target;
+            const lines = textarea.value.substring(0, textarea.selectionStart).split('\n');
+            const line = lines.length;
+            const col = lines[lines.length - 1].length + 1;
+            
+            document.getElementById('lineCol').textContent = `Line ${line}, Column ${col}`;
+
+            // Save content
+            if (currentFile) {
+                fileContent[currentFile.path] = textarea.value;
+            }
+        });
+
+        // Initialize
+        initExplorer();
+        if (files.length > 0) {
+            selectFile(files[0]);
+        }
+    </script>
+</body>
+</html>
