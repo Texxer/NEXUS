@@ -1,12 +1,12 @@
 mod text_engine;
 mod ollama_client;
-pub mod test_debugger;
-pub mod auto_test;
+// pub mod test_debugger;  // TODO: Fix and enable in next release
+// pub mod auto_test;      // TODO: Fix and enable in next release
 
 pub use text_engine::TextEngine;
 pub use ollama_client::OllamaClient;
-pub use test_debugger::IDETestDebugger;
-pub use auto_test::IDEAutoTest;
+// pub use test_debugger::IDETestDebugger;
+// pub use auto_test::IDEAutoTest;
 
 use tokio::sync::RwLock;
 use std::sync::Arc;
